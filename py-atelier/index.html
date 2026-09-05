@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Py Atelier — Python developer portfolio for automation, data scripting, and backend engineering.">
+    <meta name="theme-color" content="#f3f6f8">
+
+    <meta property="og:title" content="Py Atelier — Python Developer">
+    <meta property="og:description" content="Crafting reliable Python systems — automation, data pipelines, and backend services.">
+    <meta property="og:type" content="website">
+
+    <title>Py Atelier — Python Developer Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fira+Code:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-atmosphere" aria-hidden="true">
+        <div class="grain"></div>
+        <div class="gradient-orb orb-a"></div>
+        <div class="gradient-orb orb-b"></div>
+    </div>
+
+    <header class="site-header" id="top">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="#home" class="brand" aria-label="Py Atelier home">
+                <span class="brand-mark">py.</span>
+                <span class="brand-name">Atelier</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primaryNavigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="primaryNavigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#stack" class="nav-link">Stack</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#snippets" class="nav-link">Snippets</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <a href="#contact" class="nav-cta">Get in touch</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero section" id="home">
+            <div class="container hero-layout">
+                <div class="hero-portrait reveal">
+                    <figure class="portrait-frame">
+                        <img
+                            src="assets/avatar.jpg"
+                            alt="Your Name — Python developer"
+                            class="portrait-photo"
+                            width="480"
+                            height="560"
+                            loading="eager"
+                        >
+                        <div class="portrait-fallback" aria-hidden="true">PA</div>
+                        <figcaption class="portrait-caption">
+                            <span class="brand-signal">py.</span>
+                            <span class="caption-text">Python craft</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="hero-content reveal delay-1">
+                    <p class="hero-eyebrow">
+                        <span class="status-dot"></span>
+                        Available for freelance &amp; full-time
+                    </p>
+
+                    <h1>
+                        Your Name
+                        <span class="hero-sub">Python Developer</span>
+                    </h1>
+
+                    <p class="hero-lead">
+                        I build automation pipelines, data scripts, and backend
+                        services with clean, maintainable Python.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact me</a>
+                    </div>
+
+                    <ul class="hero-tags" aria-label="Focus areas">
+                        <li>Automation</li>
+                        <li>Data scripting</li>
+                        <li>Backend APIs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-label">About</span>
+                    <h2>Thoughtful Python, built to last</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>
+                            I'm a Python developer focused on automation, data
+                            workflows, and backend systems. I treat every script
+                            and service as craft — readable, tested, and ready
+                            for the next maintainer.
+                        </p>
+                        <p>
+                            From one-off data transforms to production APIs, I
+                            prefer simple architectures, explicit error handling,
+                            and tooling that teams can actually operate.
+                        </p>
+
+                        <ul class="about-highlights">
+                            <li>
+                                <strong>5+ years</strong>
+                                <span>Python in production</span>
+                            </li>
+                            <li>
+                                <strong>40+</strong>
+                                <span>automation workflows shipped</span>
+                            </li>
+                            <li>
+                                <strong>Remote</strong>
+                                <span>UTC+0 — flexible overlap</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <aside class="about-aside reveal delay-1">
+                        <div class="code-card">
+                            <div class="code-card-header">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <code>craft.py</code>
+                            </div>
+                            <pre><code><span class="kw">def</span> <span class="fn">ship</span>(feature: <span class="ty">Feature</span>) -> <span class="ty">Result</span>:
+    <span class="kw">return</span> (
+        feature
+        .<span class="fn">test</span>()
+        .<span class="fn">document</span>()
+        .<span class="fn">deploy</span>()
+    )</code></pre>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Python Stack -->
+        <section class="section section-alt" id="stack">
+            <div class="container">
+                <div class="section-heading centered reveal">
+                    <span class="section-label">Python Stack</span>
+                    <h2>Tools I reach for daily</h2>
+                    <p class="section-desc">
+                        Frameworks and libraries for web backends, data work,
+                        and automation — placeholders you can swap for your stack.
+                    </p>
+                </div>
+
+                <div class="stack-grid">
+                    <article class="stack-card reveal">
+                        <span class="stack-icon">⚡</span>
+                        <h3>Web &amp; APIs</h3>
+                        <ul>
+                            <li>Django</li>
+                            <li>Flask</li>
+                            <li>FastAPI</li>
+                            <li>Celery</li>
+                        </ul>
+                    </article>
+
+                    <article class="stack-card reveal delay-1">
+                        <span class="stack-icon">📊</span>
+                        <h3>Data &amp; Analytics</h3>
+                        <ul>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>Polars</li>
+                            <li>SQLAlchemy</li>
+                        </ul>
+                    </article>
+
+                    <article class="stack-card reveal delay-2">
+                        <span class="stack-icon">🤖</span>
+                        <h3>Automation</h3>
+                        <ul>
+                            <li>Airflow</li>
+                            <li>Playwright</li>
+                            <li>Requests / httpx</li>
+                            <li>Schedule / cron</li>
+                        </ul>
+                    </article>
+
+                    <article class="stack-card reveal delay-3">
+                        <span class="stack-icon">🔧</span>
+                        <h3>Dev &amp; Ops</h3>
+                        <ul>
+                            <li>pytest</li>
+                            <li>Docker</li>
+                            <li>Poetry / pip</li>
+                            <li>PostgreSQL / Redis</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-label">Projects</span>
+                    <h2>Selected work</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card featured reveal">
+                        <div class="project-meta">
+                            <span class="project-tag">Automation</span>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <h3>Invoice Reconciliation Pipeline</h3>
+                        <p>
+                            End-to-end Python workflow that ingests CSV exports,
+                            validates against ERP records, and posts exceptions
+                            to Slack — saving ~12 hours per week.
+                        </p>
+                        <ul class="project-tech">
+                            <li>Pandas</li>
+                            <li>Airflow</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" aria-label="View Invoice Reconciliation case study">Case study →</a>
+                            <a href="#" aria-label="Invoice Reconciliation on GitHub">GitHub ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal delay-1">
+                        <div class="project-meta">
+                            <span class="project-tag">Backend</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3>Inventory REST API</h3>
+                        <p>
+                            FastAPI service with role-based access, async DB
+                            queries, and OpenAPI docs for a warehouse team.
+                        </p>
+                        <ul class="project-tech">
+                            <li>FastAPI</li>
+                            <li>SQLAlchemy</li>
+                            <li>Redis</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#">Live demo ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal delay-2">
+                        <div class="project-meta">
+                            <span class="project-tag">Data</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3>ETL Report Generator</h3>
+                        <p>
+                            Scheduled scripts that pull from three APIs, merge
+                            datasets, and deliver PDF summaries to stakeholders.
+                        </p>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>Polars</li>
+                            <li>ReportLab</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#">GitHub ↗</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section section-alt" id="experience">
+            <div class="container">
+                <div class="section-heading centered reveal">
+                    <span class="section-label">Experience</span>
+                    <h2>Where I've applied Python</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-body">
+                            <time datetime="2022">2022 — Present</time>
+                            <h3>Senior Python Developer</h3>
+                            <p class="timeline-org">Acme Data Co.</p>
+                            <p>
+                                Led automation initiatives, migrated legacy cron
+                                jobs to Airflow, and maintained Django internal
+                                tools used by 200+ staff.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-body">
+                            <time datetime="2019">2019 — 2022</time>
+                            <h3>Backend Developer</h3>
+                            <p class="timeline-org">Flowstack Labs</p>
+                            <p>
+                                Built Flask and FastAPI microservices, wrote
+                                data migration scripts, and introduced pytest
+                                coverage across the backend team.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-body">
+                            <time datetime="2017">2017 — 2019</time>
+                            <h3>Junior Python Developer</h3>
+                            <p class="timeline-org">Northbridge Analytics</p>
+                            <p>
+                                Maintained Pandas reporting pipelines and
+                                internal dashboards; first production Django
+                                deployments and SQL optimization work.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Open Source / Snippets -->
+        <section class="section" id="snippets">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-label">Open Source &amp; Snippets</span>
+                    <h2>Small tools, shared freely</h2>
+                    <p class="section-desc">
+                        Utility scripts and libraries I publish for the Python
+                        community — swap links and descriptions with your own.
+                    </p>
+                </div>
+
+                <div class="snippets-grid">
+                    <article class="snippet-card reveal">
+                        <div class="snippet-header">
+                            <code>csv-merge-kit</code>
+                            <span class="snippet-stars">★ 128</span>
+                        </div>
+                        <p>
+                            CLI to merge heterogeneous CSV schemas with
+                            configurable column mapping and validation rules.
+                        </p>
+                        <a href="#" class="snippet-link">View on GitHub ↗</a>
+                    </article>
+
+                    <article class="snippet-card reveal delay-1">
+                        <div class="snippet-header">
+                            <code>retry-decorator</code>
+                            <span class="snippet-stars">★ 64</span>
+                        </div>
+                        <p>
+                            Lightweight exponential-backoff decorator for
+                            httpx and requests with jitter and logging hooks.
+                        </p>
+                        <a href="#" class="snippet-link">View on GitHub ↗</a>
+                    </article>
+
+                    <article class="snippet-card reveal delay-2">
+                        <div class="snippet-header">
+                            <code>django-audit-log</code>
+                            <span class="snippet-stars">★ 41</span>
+                        </div>
+                        <p>
+                            Middleware + model mixin for field-level change
+                            tracking in Django admin and custom views.
+                        </p>
+                        <a href="#" class="snippet-link">View on GitHub ↗</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section section-contact" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-intro reveal">
+                    <span class="section-label">Contact</span>
+                    <h2>Let's build something reliable</h2>
+                    <p>
+                        Open to automation projects, backend contracts, and
+                        data scripting engagements. Drop a line — I usually
+                        reply within one business day.
+                    </p>
+
+                    <ul class="contact-details">
+                        <li>
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:hello@example.com">hello@example.com</a>
+                        </li>
+                        <li>
+                            <span class="contact-label">GitHub</span>
+                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">@yourusername</a>
+                        </li>
+                        <li>
+                            <span class="contact-label">Location</span>
+                            <span>London, UK · Remote-friendly</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-form-wrapper reveal delay-1">
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" autocomplete="name" required placeholder="Jane Doe">
+                                <span class="form-error" id="nameError">Please enter your name.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" autocomplete="email" required placeholder="jane@example.com">
+                                <span class="form-error" id="emailError">Please enter a valid email.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project…"></textarea>
+                            <span class="form-error" id="messageError">Please enter a message (at least 10 characters).</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit">Send message</button>
+
+                        <p class="form-success" id="formSuccess" role="status" aria-live="polite">
+                            Thank you — your message has been sent.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a href="#home" class="footer-brand">
+                <span class="brand-mark">py.</span> Atelier
+            </a>
+            <p>&copy; <span id="year"></span> Your Name. Crafted with Python in mind.</p>
+            <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑ Top</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
