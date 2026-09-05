@@ -809,12 +809,20 @@ document.documentElement.classList.add(
     "js-enabled"
 );
 
-console.log(
-    "%c// Portfolio initialized",
-    "color:#00ff88;font-family:monospace;font-weight:bold;"
-);
+/* Show initials when avatar image is missing */
+$$(".portrait-photo, .profile-photo, .github-avatar img").forEach((img) => {
+    img.addEventListener("error", () => {
+        img.style.display = "none";
+        const fallback = img.parentElement.querySelector(
+            ".portrait-fallback, .avatar-fallback"
+        );
+        if (fallback) {
+            fallback.style.display = "grid";
+        }
+    });
+});
 
 console.log(
-    "%cBuilt with HTML5 + CSS3 + Vanilla JavaScript",
-    "color:#8b949e;font-family:monospace;"
+    "%c// Code Terminal portfolio initialized",
+    "color:#00ff88;font-family:monospace;font-weight:bold;"
 );
