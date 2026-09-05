@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Craft — Full-stack web developer portfolio. Custom HTML/CSS/JS sites, WordPress builds, and polished digital experiences.">
+    <meta name="theme-color" content="#111111">
+
+    <meta property="og:title" content="Your Name — Web Craft">
+    <meta property="og:description" content="Full web developer crafting fast, accessible, and beautiful sites.">
+    <meta property="og:type" content="website">
+
+    <title>Web Craft — Your Name | Full Web Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-bg" aria-hidden="true">
+        <div class="bg-grid"></div>
+        <div class="bg-glow bg-glow--coral"></div>
+        <div class="bg-glow bg-glow--mint"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="site-header" id="top">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="#home" class="brand" aria-label="Web Craft home">
+                <span class="brand-mark">WC</span>
+                <span class="brand-name">web<span class="brand-dot">.</span></span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primaryNavigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="primaryNavigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link nav-link--cta">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="container hero__inner">
+                <div class="hero__content reveal">
+                    <p class="hero__eyebrow">
+                        <span class="pulse-dot" aria-hidden="true"></span>
+                        Available for freelance &amp; contract
+                    </p>
+                    <h1 class="hero__title">
+                        I craft the web<br>
+                        <span class="hero__title-accent">pixel by pixel.</span>
+                    </h1>
+                    <p class="hero__lead">
+                        Full web developer building fast, accessible sites — from hand-coded HTML/CSS/JS to WordPress and CMS-driven experiences.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#projects" class="btn btn--primary">View featured work</a>
+                        <a href="#contact" class="btn btn--ghost">Start a project</a>
+                    </div>
+                    <ul class="hero__stats" aria-label="Quick highlights">
+                        <li><strong>40+</strong> sites shipped</li>
+                        <li><strong>5yr</strong> web craft</li>
+                        <li><strong>100%</strong> hand-built</li>
+                    </ul>
+                </div>
+
+                <div class="hero__visual reveal reveal--delay">
+                    <div class="hero__frame">
+                        <div class="hero__frame-ring" aria-hidden="true"></div>
+                        <div class="hero__avatar-wrap">
+                            <img
+                                src="assets/avatar.jpg"
+                                alt="Your Name — web developer portrait"
+                                class="hero__avatar"
+                                id="ownerAvatar"
+                                width="420"
+                                height="520"
+                            >
+                            <div class="hero__avatar-fallback" id="avatarFallback" aria-hidden="true">WC</div>
+                        </div>
+                        <div class="hero__badge">
+                            <span class="hero__badge-label">Web Craft</span>
+                            <span class="hero__badge-role">Your Name</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container">
+                <header class="section__header reveal">
+                    <span class="section__tag">About</span>
+                    <h2 class="section__title">Building sites that feel <em>crafted</em>, not templated.</h2>
+                </header>
+                <div class="about__grid">
+                    <div class="about__text reveal">
+                        <p>
+                            Hi, I'm <strong>Your Name</strong> — a full web developer who loves turning ideas into polished, performant websites. Whether it's a lean static build, a custom theme, or a WordPress site your client can actually manage, I focus on clean markup, thoughtful design, and real-world usability.
+                        </p>
+                        <p>
+                            I work across the full stack of the modern web: semantic HTML, expressive CSS, vanilla JavaScript, responsive layouts, accessibility, SEO basics, and CMS integration. Every project gets the same attention to detail — from the hero down to the 404 page.
+                        </p>
+                    </div>
+                    <ul class="about__highlights reveal reveal--delay">
+                        <li>
+                            <span class="about__icon" aria-hidden="true">01</span>
+                            <div>
+                                <h3>Hand-coded foundations</h3>
+                                <p>No bloated page builders — lean, maintainable code you own.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="about__icon" aria-hidden="true">02</span>
+                            <div>
+                                <h3>CMS when it matters</h3>
+                                <p>WordPress, headless setups, and content workflows that scale.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="about__icon" aria-hidden="true">03</span>
+                            <div>
+                                <h3>Design + dev in one</h3>
+                                <p>From wireframe to launch — cohesive visual and technical craft.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services / Skills -->
+        <section class="section section--surface" id="services">
+            <div class="container">
+                <header class="section__header reveal">
+                    <span class="section__tag">Services &amp; Skills</span>
+                    <h2 class="section__title">Everything you need for a standout web presence.</h2>
+                </header>
+                <div class="services__grid">
+                    <article class="service-card reveal">
+                        <div class="service-card__icon" aria-hidden="true">&lt;/&gt;</div>
+                        <h3>Custom Front-End</h3>
+                        <p>Responsive layouts, animations, and interactions built with HTML, CSS, and JavaScript — no framework required unless you want one.</p>
+                        <ul class="skill-tags">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>GSAP</li>
+                        </ul>
+                    </article>
+                    <article class="service-card reveal reveal--delay">
+                        <div class="service-card__icon" aria-hidden="true">WP</div>
+                        <h3>WordPress &amp; CMS</h3>
+                        <p>Custom themes, block patterns, plugin integration, and admin experiences that clients love to use.</p>
+                        <ul class="skill-tags">
+                            <li>WordPress</li>
+                            <li>PHP</li>
+                            <li>ACF</li>
+                            <li>Gutenberg</li>
+                        </ul>
+                    </article>
+                    <article class="service-card reveal reveal--delay-2">
+                        <div class="service-card__icon" aria-hidden="true">⚡</div>
+                        <h3>Performance &amp; SEO</h3>
+                        <p>Core Web Vitals, semantic structure, meta tags, schema markup, and hosting guidance for sites that rank and load fast.</p>
+                        <ul class="skill-tags">
+                            <li>Lighthouse</li>
+                            <li>SEO</li>
+                            <li>a11y</li>
+                            <li>Analytics</li>
+                        </ul>
+                    </article>
+                    <article class="service-card reveal">
+                        <div class="service-card__icon" aria-hidden="true">✦</div>
+                        <h3>Design Systems</h3>
+                        <p>Component libraries, style guides, and reusable patterns so your brand stays consistent across every page.</p>
+                        <ul class="skill-tags">
+                            <li>Figma</li>
+                            <li>CSS Vars</li>
+                            <li>Storybook</li>
+                            <li>Tokens</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="section" id="projects">
+            <div class="container">
+                <header class="section__header section__header--split reveal">
+                    <div>
+                        <span class="section__tag">Featured Sites</span>
+                        <h2 class="section__title">Selected projects &amp; live builds.</h2>
+                    </div>
+                    <a href="#contact" class="link-arrow">Discuss your project →</a>
+                </header>
+                <div class="projects__grid">
+                    <article class="project-card reveal">
+                        <div class="project-card__preview project-card__preview--one">
+                            <span class="project-card__url">artisanbakery.co</span>
+                        </div>
+                        <div class="project-card__body">
+                            <h3>Artisan Bakery Co.</h3>
+                            <p>Custom static site with online ordering flow, menu CMS export, and sub-1s LCP on mobile.</p>
+                            <div class="project-card__meta">
+                                <span>HTML/CSS/JS</span>
+                                <span>2025</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card reveal reveal--delay">
+                        <div class="project-card__preview project-card__preview--two">
+                            <span class="project-card__url">northwind.studio</span>
+                        </div>
+                        <div class="project-card__body">
+                            <h3>Northwind Studio</h3>
+                            <p>WordPress block theme for a design agency — case studies, team profiles, and client portal.</p>
+                            <div class="project-card__meta">
+                                <span>WordPress</span>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card reveal reveal--delay-2">
+                        <div class="project-card__preview project-card__preview--three">
+                            <span class="project-card__url">greenpath.org</span>
+                        </div>
+                        <div class="project-card__body">
+                            <h3>GreenPath Initiative</h3>
+                            <p>Nonprofit site with donation integration, event calendar, and WCAG 2.1 AA compliance.</p>
+                            <div class="project-card__meta">
+                                <span>HTML/CSS/JS</span>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-card__preview project-card__preview--four">
+                            <span class="project-card__url">loomandthread.shop</span>
+                        </div>
+                        <div class="project-card__body">
+                            <h3>Loom &amp; Thread</h3>
+                            <p>E-commerce storefront with custom product filters, lazy-loaded galleries, and Stripe checkout.</p>
+                            <div class="project-card__meta">
+                                <span>WordPress/Woo</span>
+                                <span>2023</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="section section--surface" id="process">
+            <div class="container">
+                <header class="section__header reveal">
+                    <span class="section__tag">Process</span>
+                    <h2 class="section__title">From brief to launch — a clear, collaborative path.</h2>
+                </header>
+                <ol class="process__steps">
+                    <li class="process-step reveal">
+                        <span class="process-step__num">01</span>
+                        <h3>Discover</h3>
+                        <p>We align on goals, audience, content, and timeline. I audit your current site or sketch a sitemap for greenfield builds.</p>
+                    </li>
+                    <li class="process-step reveal reveal--delay">
+                        <span class="process-step__num">02</span>
+                        <h3>Design &amp; Prototype</h3>
+                        <p>Wireframes and high-fidelity mockups in Figma. You review key pages before a single line of production code.</p>
+                    </li>
+                    <li class="process-step reveal reveal--delay-2">
+                        <span class="process-step__num">03</span>
+                        <h3>Build &amp; Iterate</h3>
+                        <p>Semantic markup, responsive CSS, interactions, CMS setup. Regular check-ins with staging links for feedback.</p>
+                    </li>
+                    <li class="process-step reveal reveal--delay-3">
+                        <span class="process-step__num">04</span>
+                        <h3>Launch &amp; Support</h3>
+                        <p>DNS, SSL, performance pass, analytics, and a handoff doc. Optional retainer for updates and new features.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section" id="experience">
+            <div class="container">
+                <header class="section__header reveal">
+                    <span class="section__tag">Experience</span>
+                    <h2 class="section__title">Where I've honed the craft.</h2>
+                </header>
+                <div class="timeline">
+                    <article class="timeline__item reveal">
+                        <time datetime="2022">2022 — Present</time>
+                        <h3>Freelance Web Developer</h3>
+                        <p class="timeline__org">Self-employed · Remote</p>
+                        <p>Delivering custom sites and WordPress builds for startups, agencies, and small businesses across 12 countries.</p>
+                    </article>
+                    <article class="timeline__item reveal reveal--delay">
+                        <time datetime="2020">2020 — 2022</time>
+                        <h3>Front-End Developer</h3>
+                        <p class="timeline__org">Pixel &amp; Code Agency · Hybrid</p>
+                        <p>Led responsive builds for 20+ client projects, established internal CSS architecture, and mentored junior devs.</p>
+                    </article>
+                    <article class="timeline__item reveal reveal--delay-2">
+                        <time datetime="2018">2018 — 2020</time>
+                        <h3>WordPress Developer</h3>
+                        <p class="timeline__org">Brightline Digital · On-site</p>
+                        <p>Built custom themes, migrated legacy sites, and improved average PageSpeed scores by 40% across the portfolio.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section section--contact" id="contact">
+            <div class="container">
+                <div class="contact__grid">
+                    <header class="contact__intro reveal">
+                        <span class="section__tag">Contact</span>
+                        <h2 class="section__title">Let's build something worth bookmarking.</h2>
+                        <p>Tell me about your project — timeline, budget range, and what success looks like. I typically respond within 24 hours.</p>
+                        <ul class="contact__links">
+                            <li>
+                                <a href="mailto:hello@yourname.dev">hello@yourname.dev</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/yourname" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </header>
+
+                    <form class="contact-form reveal reveal--delay" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your Name">
+                            <span class="form-error" id="nameError" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com">
+                            <span class="form-error" id="emailError" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project…"></textarea>
+                            <span class="form-error" id="messageError" role="alert"></span>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Send message</button>
+                        <p class="form-success" id="formSuccess" role="status" hidden>Thanks! Your message looks good — wire up this form to your backend or Formspree.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <a href="#home" class="brand brand--footer" aria-label="Web Craft home">
+                <span class="brand-mark">WC</span>
+                <span class="brand-name">web<span class="brand-dot">.</span></span>
+            </a>
+            <p class="site-footer__copy">&copy; <span id="year"></span> Your Name. Crafted with care.</p>
+            <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
