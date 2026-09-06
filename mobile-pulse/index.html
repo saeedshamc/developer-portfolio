@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mobile Pulse — Android, iOS &amp; Flutter developer portfolio. Native apps, cross-platform craft, and polished mobile experiences.">
+  <meta name="theme-color" content="#111111">
+  <title>Mobile Pulse | Android · iOS · Flutter Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true">
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="brand">
+        <span class="brand-mark">MP</span>
+        <span class="brand-name">Mobile Pulse</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#stack">Mobile Stack</a></li>
+        <li><a href="#projects">App Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-visual reveal">
+          <div class="phone-frame" aria-hidden="true">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-photo">
+                <img src="assets/avatar.jpg" alt="Your Name" class="avatar-img" id="heroAvatar" data-fallback="MP">
+                <div class="avatar-fallback" id="heroAvatarFallback" hidden>MP</div>
+              </div>
+            </div>
+            <div class="phone-btn"></div>
+          </div>
+          <div class="hero-pulse-ring" aria-hidden="true"></div>
+        </div>
+        <div class="hero-copy reveal" data-delay="120">
+          <p class="hero-eyebrow"><span class="mono">//</span> Android · iOS · Flutter</p>
+          <h1 class="hero-title">Apps that feel native on every screen.</h1>
+          <p class="hero-desc">I build performant mobile products — from Kotlin &amp; SwiftUI to Flutter — with pixel-level polish and production-grade architecture.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View App Projects</a>
+            <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>12+</strong><span>Shipped apps</span></li>
+            <li><strong>4M+</strong><span>Downloads</span></li>
+            <li><strong>4.8</strong><span>Avg. store rating</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag mono">01 — About</span>
+          <h2 class="section-title">Mobile-first engineering with product instinct.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm <strong>Your Name</strong>, a mobile developer with 7+ years shipping apps across Android, iOS, and cross-platform stacks. I care about frame rates, offline resilience, and the small interactions that make users stay.</p>
+            <p>From MVVM &amp; Clean Architecture to CI/CD pipelines and store optimization, I bridge design intent and platform conventions so every release feels intentional.</p>
+          </div>
+          <div class="about-aside reveal" data-delay="100">
+            <ul class="about-list">
+              <li><span class="about-label mono">Focus</span>Native &amp; cross-platform apps</li>
+              <li><span class="about-label mono">Platforms</span>Android · iOS · Flutter</li>
+              <li><span class="about-label mono">Based</span>Remote · Open to relocation</li>
+              <li><span class="about-label mono">Status</span>Available for freelance &amp; full-time</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile Stack -->
+    <section class="section section-alt" id="stack">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag mono">02 — Mobile Stack</span>
+          <h2 class="section-title">Tools across the mobile spectrum.</h2>
+        </div>
+        <div class="stack-grid">
+          <article class="stack-card reveal">
+            <div class="stack-icon android" aria-hidden="true"></div>
+            <h3>Android</h3>
+            <p>Kotlin-first development with Jetpack Compose, Room, WorkManager, and Material You theming.</p>
+            <ul class="stack-tags">
+              <li>Kotlin</li><li>Compose</li><li>Coroutines</li><li>Hilt</li>
+            </ul>
+          </article>
+          <article class="stack-card reveal" data-delay="80">
+            <div class="stack-icon ios" aria-hidden="true"></div>
+            <h3>iOS</h3>
+            <p>SwiftUI &amp; UIKit interfaces, Core Data, push notifications, and App Store Connect workflows.</p>
+            <ul class="stack-tags">
+              <li>Swift</li><li>SwiftUI</li><li>Combine</li><li>SPM</li>
+            </ul>
+          </article>
+          <article class="stack-card reveal" data-delay="160">
+            <div class="stack-icon flutter" aria-hidden="true"></div>
+            <h3>Flutter</h3>
+            <p>Single codebase delivery with custom widgets, platform channels, and Firebase integration.</p>
+            <ul class="stack-tags">
+              <li>Dart</li><li>Riverpod</li><li>GoRouter</li><li>Firebase</li>
+            </ul>
+          </article>
+          <article class="stack-card reveal" data-delay="240">
+            <div class="stack-icon infra" aria-hidden="true"></div>
+            <h3>DevOps &amp; Quality</h3>
+            <p>Fastlane, GitHub Actions, Crashlytics, and automated UI tests that catch regressions early.</p>
+            <ul class="stack-tags">
+              <li>Fastlane</li><li>Detox</li><li>Firebase</li><li>TestFlight</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- App Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag mono">03 — App Projects</span>
+          <h2 class="section-title">Shipped products on real devices.</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-device">
+              <div class="device-screen screen-a">
+                <span class="screen-header"></span>
+                <span class="screen-card"></span>
+                <span class="screen-card short"></span>
+                <span class="screen-nav"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-platform">Android · iOS</span>
+              <h3>PulsePay Wallet</h3>
+              <p>Biometric-secured fintech app with offline transaction queue, real-time sync, and 60fps chart animations.</p>
+              <div class="project-meta">
+                <span>Kotlin</span><span>SwiftUI</span><span>1.2M+ DL</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal" data-delay="100">
+            <div class="project-device">
+              <div class="device-screen screen-b">
+                <span class="screen-map"></span>
+                <span class="screen-pin"></span>
+                <span class="screen-nav"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-platform">Flutter</span>
+              <h3>RouteMind Navigator</h3>
+              <p>Cross-platform navigation with turn-by-turn voice, background location, and adaptive dark mode maps.</p>
+              <div class="project-meta">
+                <span>Flutter</span><span>Mapbox</span><span>850K+ DL</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal" data-delay="200">
+            <div class="project-device">
+              <div class="device-screen screen-c">
+                <span class="screen-avatar"></span>
+                <span class="screen-bubble"></span>
+                <span class="screen-bubble alt"></span>
+                <span class="screen-input"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-platform">Android</span>
+              <h3>ThreadChat</h3>
+              <p>End-to-end encrypted messaging with Compose UI, WebSocket presence, and rich media compression pipeline.</p>
+              <div class="project-meta">
+                <span>Compose</span><span>WebSocket</span><span>4.9 ★</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag mono">04 — Experience</span>
+          <h2 class="section-title">Building mobile products at scale.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date mono">2022 — Present</span>
+              <h3>Senior Mobile Engineer</h3>
+              <p class="timeline-company">NovaTech Labs</p>
+              <p>Led Android &amp; Flutter migration for a legacy Java codebase. Reduced crash rate by 72% and cut release cycle from 3 weeks to 5 days.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="80">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date mono">2019 — 2022</span>
+              <h3>Mobile Developer</h3>
+              <p class="timeline-company">PixelForge Studio</p>
+              <p>Shipped 6 consumer apps for iOS &amp; Android. Built shared design system in Flutter used across 3 product lines.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="160">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date mono">2017 — 2019</span>
+              <h3>Junior Android Developer</h3>
+              <p class="timeline-company">AppCraft Inc.</p>
+              <p>Maintained Kotlin Android apps for e-commerce clients. Introduced Espresso UI tests and CI pipeline with Bitrise.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="section-tag mono">05 — Contact</span>
+            <h2 class="section-title">Let&apos;s build your next app.</h2>
+            <p>Whether you need a native rewrite, a Flutter MVP, or store launch support — I&apos;d love to hear about your project.</p>
+            <ul class="contact-links">
+              <li>
+                <span class="contact-label mono">Email</span>
+                <a href="mailto:hello@mobilepulse.dev">hello@mobilepulse.dev</a>
+              </li>
+              <li>
+                <span class="contact-label mono">GitHub</span>
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a>
+              </li>
+              <li>
+                <span class="contact-label mono">LinkedIn</span>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourusername</a>
+              </li>
+            </ul>
+          </div>
+          <form class="contact-form reveal" data-delay="100" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name">
+              <span class="form-error" id="nameError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com">
+              <span class="form-error" id="emailError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your app idea…"></textarea>
+              <span class="form-error" id="messageError" role="alert"></span>
+            </div>
+            <button class="btn btn-primary btn-full" type="submit">Send Message</button>
+            <p class="form-success" id="formSuccess" hidden role="status">Message sent! I&apos;ll get back to you soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="brand brand-sm">
+        <span class="brand-mark">MP</span>
+        <span class="brand-name">Mobile Pulse</span>
+      </a>
+      <p class="footer-copy">&copy; <span id="year"></span> Mobile Pulse. Built with native craft.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
