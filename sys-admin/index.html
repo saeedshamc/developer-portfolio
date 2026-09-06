@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sys Admin — Linux &amp; System Administration portfolio. Server hardening, automation, and infrastructure reliability.">
+  <meta name="theme-color" content="#0d1117">
+  <meta property="og:title" content="Sys Admin | Linux System Administrator">
+  <meta property="og:description" content="Linux system administration portfolio — automation, hardening, and uptime-focused infrastructure.">
+  <meta property="og:type" content="website">
+  <title>Sys Admin | Linux System Administrator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="shell-bg" aria-hidden="true"></div>
+  <div class="prompt-glow" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#hero" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="5" width="26" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M3 9h26" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="6.5" cy="7" r="0.75" fill="currentColor"/>
+            <circle cx="9" cy="7" r="0.75" fill="currentColor"/>
+            <circle cx="11.5" cy="7" r="0.75" fill="currentColor"/>
+            <path d="M7 16l2.5 2.5L15 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17 19h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">Sys<span class="brand-accent">Admin</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#toolkit">Toolkit</a></li>
+        <li><a href="#infrastructure">Infrastructure</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <p class="hero-prompt"><span class="mono">sa@prod</span><span class="prompt-sep">:</span><span class="mono">~</span><span class="prompt-sep">$</span> whoami</p>
+          <h1 class="hero-title">Keeping servers stable, secure, and silent at 3&nbsp;a.m.</h1>
+          <p class="hero-desc">I'm a Linux system administrator who treats uptime as a feature — hardening hosts, automating toil, and building infrastructure that teams can trust under load.</p>
+          <div class="hero-cta">
+            <a href="#infrastructure" class="btn btn-primary">View Infrastructure Work</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+          <ul class="hero-stats">
+            <li><span class="stat-num mono">99.97%</span><span class="stat-label">Uptime SLA</span></li>
+            <li><span class="stat-num mono">200+</span><span class="stat-label">Hosts managed</span></li>
+            <li><span class="stat-num mono">8+</span><span class="stat-label">Years on Linux</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual reveal" data-delay="150">
+          <div class="terminal-frame">
+            <div class="terminal-bar">
+              <span class="term-dot"></span>
+              <span class="term-dot"></span>
+              <span class="term-dot"></span>
+              <span class="term-title mono">sysadmin — bash</span>
+            </div>
+            <div class="avatar-wrap">
+              <img src="assets/avatar.jpg" alt="Your Name — Linux System Administrator" class="avatar-img" id="heroAvatar" data-fallback="SA" width="420" height="480">
+              <div class="avatar-fallback" id="heroAvatarFallback" hidden>SA</div>
+            </div>
+            <div class="hero-meta">
+              <span class="meta-tag mono">Your Name</span>
+              <span class="meta-role">Senior Linux Sysadmin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag mono">01 — About</span>
+          <h2 class="section-title">Reliability through discipline, not luck.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <img src="assets/avatar.jpg" alt="Your Name" class="avatar-img" data-fallback="SA">
+            <div class="avatar-fallback about-fallback" hidden>SA</div>
+          </div>
+          <div class="about-text reveal" data-delay="100">
+            <p>I'm <strong>Your Name</strong>, a Linux system administrator with 8+ years managing production fleets across bare metal, VMs, and containers. I focus on configuration management, observability, and security baselines that scale without heroics.</p>
+            <p>From RHEL and Debian estates to Kubernetes worker nodes, I design runbooks, automate patching pipelines, and keep on-call pages rare. Good sysadmin work is invisible — services stay up, logs stay clean, and teams ship without fighting the platform.</p>
+            <ul class="about-facts">
+              <li><span class="mono">Focus</span> Linux · Automation · SRE practices</li>
+              <li><span class="mono">Certs</span> RHCSA · LFCS · CompTIA Linux+</li>
+              <li><span class="mono">Stack</span> Ansible · Terraform · Prometheus</li>
+              <li><span class="mono">Location</span> Your City, Country</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admin Toolkit -->
+    <section class="section section-alt" id="toolkit">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag mono">02 — Admin Toolkit</span>
+          <h2 class="section-title">Tools I live in daily</h2>
+        </div>
+        <div class="toolkit-grid">
+          <article class="tool-card reveal">
+            <div class="tool-icon mono">OS</div>
+            <h3>Linux Platforms</h3>
+            <p>RHEL, Debian, Ubuntu, and Alpine — kernel tuning, package lifecycle, and CIS hardening across mixed estates.</p>
+            <ul class="tool-tags">
+              <li>RHEL 9</li><li>Debian</li><li>systemd</li><li>SELinux</li>
+            </ul>
+          </article>
+          <article class="tool-card reveal" data-delay="80">
+            <div class="tool-icon mono">CFG</div>
+            <h3>Configuration &amp; IaC</h3>
+            <p>Idempotent provisioning with Ansible roles, Terraform modules, and GitOps workflows for drift-free servers.</p>
+            <ul class="tool-tags">
+              <li>Ansible</li><li>Terraform</li><li>Cloud-init</li><li>GitOps</li>
+            </ul>
+          </article>
+          <article class="tool-card reveal" data-delay="160">
+            <div class="tool-icon mono">CTR</div>
+            <h3>Containers &amp; Orchestration</h3>
+            <p>Docker runtime hardening, Kubernetes node ops, Helm releases, and container image scanning in CI pipelines.</p>
+            <ul class="tool-tags">
+              <li>Docker</li><li>Kubernetes</li><li>Helm</li><li>containerd</li>
+            </ul>
+          </article>
+          <article class="tool-card reveal" data-delay="240">
+            <div class="tool-icon mono">MON</div>
+            <h3>Monitoring &amp; Logging</h3>
+            <p>Prometheus alerting, Grafana dashboards, ELK ingestion, and on-call runbooks tied to SLO burn rates.</p>
+            <ul class="tool-tags">
+              <li>Prometheus</li><li>Grafana</li><li>ELK</li><li>Alertmanager</li>
+            </ul>
+          </article>
+          <article class="tool-card reveal" data-delay="320">
+            <div class="tool-icon mono">NET</div>
+            <h3>Networking &amp; Security</h3>
+            <p>iptables/nftables, WireGuard VPNs, TLS termination, SSH hardening, and fail2ban policy enforcement.</p>
+            <ul class="tool-tags">
+              <li>nftables</li><li>WireGuard</li><li>nginx</li><li>Vault</li>
+            </ul>
+          </article>
+          <article class="tool-card reveal" data-delay="400">
+            <div class="tool-icon mono">SCR</div>
+            <h3>Scripting &amp; Automation</h3>
+            <p>Bash, Python, and cron/systemd timers for backups, health checks, and self-healing maintenance jobs.</p>
+            <ul class="tool-tags">
+              <li>Bash</li><li>Python</li><li>systemd</li><li>Make</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Infrastructure Work -->
+    <section class="section" id="infrastructure">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag mono">03 — Infrastructure Work</span>
+          <h2 class="section-title">Production systems I've built &amp; maintained</h2>
+        </div>
+        <div class="infra-list">
+          <article class="infra-card reveal">
+            <div class="infra-num mono">01</div>
+            <div class="infra-body">
+              <h3>Multi-Region Linux Fleet Migration</h3>
+              <p>Migrated 120+ CentOS 7 hosts to RHEL 9 with zero-downtime cutover — Ansible playbooks, rolling reboots, and automated rollback hooks reduced migration risk across three data centers.</p>
+              <ul class="infra-tags">
+                <li>RHEL</li><li>Ansible</li><li>Zero-downtime</li>
+              </ul>
+            </div>
+          </article>
+          <article class="infra-card reveal" data-delay="100">
+            <div class="infra-num mono">02</div>
+            <div class="infra-body">
+              <h3>Centralized Logging &amp; Alert Pipeline</h3>
+              <p>Deployed ELK stack with Filebeat agents on 200 hosts, built Grafana SLO dashboards, and cut mean time to detect disk-full incidents from 45 minutes to under 4.</p>
+              <ul class="infra-tags">
+                <li>ELK</li><li>Prometheus</li><li>SLO</li>
+              </ul>
+            </div>
+          </article>
+          <article class="infra-card reveal" data-delay="200">
+            <div class="infra-num mono">03</div>
+            <div class="infra-body">
+              <h3>Automated Patch &amp; Compliance Baseline</h3>
+              <p>Built dnf-automatic and unattended-upgrades pipelines with pre-flight health checks, CIS benchmark scanning, and Slack notifications — 98% patch compliance within 72 hours.</p>
+              <ul class="infra-tags">
+                <li>CIS</li><li>Automation</li><li>Compliance</li>
+              </ul>
+            </div>
+          </article>
+          <article class="infra-card reveal" data-delay="300">
+            <div class="infra-num mono">04</div>
+            <div class="infra-body">
+              <h3>Disaster Recovery &amp; Backup Architecture</h3>
+              <p>Designed Restic-based encrypted backups with off-site replication, quarterly restore drills, and runbooks that recovered a full PostgreSQL cluster in under 35 minutes during a live test.</p>
+              <ul class="infra-tags">
+                <li>Restic</li><li>DR</li><li>PostgreSQL</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag mono">04 — Experience</span>
+          <h2 class="section-title">Career timeline</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2021" class="mono">2021 — Present</time>
+              <h3>Senior Linux System Administrator</h3>
+              <p class="timeline-org">InfraCore Systems</p>
+              <p>Own 200+ production hosts, lead on-call rotation, drive Ansible/Terraform standards, and mentor junior admins on incident response and capacity planning.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="100">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2018" class="mono">2018 — 2021</time>
+              <h3>Linux System Administrator</h3>
+              <p class="timeline-org">CloudBridge Hosting</p>
+              <p>Managed shared and dedicated server fleets, implemented monitoring with Nagios-to-Prometheus migration, and reduced recurring ticket volume by 40% through automation.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="200">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2016" class="mono">2016 — 2018</time>
+              <h3>Junior Sysadmin / NOC Engineer</h3>
+              <p class="timeline-org">DataPulse Networks</p>
+              <p>24/7 NOC coverage, ticket triage, basic shell scripting, and hardware racking — foundation for production Linux operations and runbook discipline.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag mono">05 — Contact</span>
+          <h2 class="section-title">Let's talk infrastructure.</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p>Available for full-time roles, contract sysadmin work, and infrastructure advisory. I respond within 48 hours.</p>
+            <ul class="contact-links">
+              <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+              <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+            <div class="contact-terminal mono" aria-hidden="true">
+              <p><span class="term-green">$</span> ssh your.name@hire-me.local</p>
+              <p>Authenticating<span class="blink-cursor">_</span></p>
+            </div>
+          </div>
+          <form class="contact-form reveal" data-delay="100" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+              <span class="form-error" data-for="name"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+              <span class="form-error" data-for="email"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+              <span class="form-error" data-for="subject"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="form-error" data-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-success" id="formSuccess" hidden>Message sent successfully. I'll be in touch soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="brand brand-sm">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><rect x="3" y="5" width="26" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 9h26" stroke="currentColor" stroke-width="1.5"/><path d="M7 16l2.5 2.5L15 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </span>
+        <span class="brand-text">Sys<span class="brand-accent">Admin</span></span>
+      </a>
+      <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
