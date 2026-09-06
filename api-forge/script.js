@@ -17,9 +17,14 @@ const backToTop = $("#backToTop");
 function handleScroll() {
     const y = window.scrollY;
 
-    header.classList.toggle("scrolled", y > 30);
-    backToTop.classList.toggle("show", y > 500);
-    backToTop.hidden = y <= 500;
+    if (header) {
+        header.classList.toggle("scrolled", y > 30);
+    }
+
+    if (backToTop) {
+        backToTop.classList.toggle("show", y > 500);
+        backToTop.hidden = y <= 500;
+    }
 }
 
 window.addEventListener("scroll", handleScroll, { passive: true });
@@ -134,13 +139,19 @@ function setupAvatarFallback(img) {
         fallback.textContent = initials;
     }
 
-    img.addEventListener("error", () => {
+    function showFallback() {
         img.style.display = "none";
 
         if (fallback) {
             fallback.hidden = false;
         }
-    });
+    }
+
+    img.addEventListener("error", showFallback);
+
+    if (img.complete && img.naturalWidth === 0) {
+        showFallback();
+    }
 }
 
 $$(".avatar-img").forEach(setupAvatarFallback);
@@ -246,6 +257,6 @@ if (contactForm) {
    Back to top
 ========================================================= */
 
-backToTop.addEventListener("click", () => {
+backToTop?.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });

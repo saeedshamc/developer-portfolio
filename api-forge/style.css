@@ -513,6 +513,10 @@ button {
     letter-spacing: -0.04em;
 }
 
+.avatar-fallback[hidden] {
+    display: none !important;
+}
+
 .hero-meta {
     display: flex;
     flex-direction: column;
