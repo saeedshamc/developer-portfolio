@@ -24,7 +24,13 @@ const TEMPLATES = [
   { id: "product-craft", name: "Product Craft", role: "Product Manager", blurb: "Indigo craft theme for technical PMs.", group: "design", path: "product-craft/" },
   { id: "resume-lite", name: "Resume Lite", role: "Universal one-pager", blurb: "Minimal resume-style page for any role.", group: "special", path: "resume-lite/" },
   { id: "rtl-studio", name: "RTL Studio", role: "Bilingual FA / EN", blurb: "RTL-first bilingual portfolio with language toggle.", group: "special", path: "rtl-studio/" },
-  { id: "case-vault", name: "Case Vault", role: "Case-study heavy", blurb: "Deep problem → solution → result storytelling.", group: "special", path: "case-vault/" }
+  { id: "case-vault", name: "Case Vault", role: "Case-study heavy", blurb: "Deep problem → solution → result storytelling.", group: "special", path: "case-vault/" },
+  { id: "code-terminal-aurora", name: "Code Aurora", role: "Software Developer · variant", blurb: "Light sky/mint aurora restyle of Code Terminal.", group: "variant", path: "code-terminal-aurora/", basedOn: "code-terminal" },
+  { id: "front-signal-noir", name: "Front Noir", role: "Frontend Engineer · variant", blurb: "Cinema noir crimson restyle of Front Signal.", group: "variant", path: "front-signal-noir/", basedOn: "front-signal" },
+  { id: "api-forge-sand", name: "API Sand", role: "Backend Engineer · variant", blurb: "Warm sandstone restyle of API Forge.", group: "variant", path: "api-forge-sand/", basedOn: "api-forge" },
+  { id: "cyber-sentinel-ice", name: "Cyber Ice", role: "Cybersecurity · variant", blurb: "Ice-blue glass restyle of Cyber Sentinel.", group: "variant", path: "cyber-sentinel-ice/", basedOn: "cyber-sentinel" },
+  { id: "py-atelier-night", name: "Py Night", role: "Python Developer · variant", blurb: "Night-ink dark restyle of Py Atelier.", group: "variant", path: "py-atelier-night/", basedOn: "py-atelier" },
+  { id: "net-lattice-light", name: "Net Light", role: "Network Engineer · variant", blurb: "Light blueprint paper restyle of Net Lattice.", group: "variant", path: "net-lattice-light/", basedOn: "net-lattice" }
 ];
 
 const grid = document.getElementById("templateGrid");

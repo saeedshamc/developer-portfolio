@@ -1,6 +1,6 @@
 # Developer Portfolio Templates
 
-A collection of **24 ready-to-use**, self-contained portfolio templates for developers and adjacent tech roles.
+A collection of **30 ready-to-use**, self-contained portfolio templates for developers and adjacent tech roles.
 
 Each template is a standalone static site: `index.html` + `style.css` + `script.js` + `assets/`.
 
@@ -79,6 +79,19 @@ A sample portrait is included in each template’s `assets/avatar.jpg` (copied f
 | [`resume-lite`](./resume-lite/) | Minimal one-page resume |
 | [`rtl-studio`](./rtl-studio/) | Bilingual FA / EN with RTL |
 | [`case-vault`](./case-vault/) | Case-study heavy storytelling |
+
+### Style variants
+
+Same roles as the originals, with a different visual system:
+
+| Folder | Based on | Look |
+|--------|----------|------|
+| [`code-terminal-aurora`](./code-terminal-aurora/) | `code-terminal` | Light sky / mint aurora |
+| [`front-signal-noir`](./front-signal-noir/) | `front-signal` | Cinema noir + crimson |
+| [`api-forge-sand`](./api-forge-sand/) | `api-forge` | Warm sandstone backend |
+| [`cyber-sentinel-ice`](./cyber-sentinel-ice/) | `cyber-sentinel` | Ice-blue security glass |
+| [`py-atelier-night`](./py-atelier-night/) | `py-atelier` | Dark night-ink Python |
+| [`net-lattice-light`](./net-lattice-light/) | `net-lattice` | Light blueprint paper |
 
 ---
 
