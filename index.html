@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Developer Portfolio Templates — 24 ready-to-use role-focused portfolio templates.">
+  <meta name="theme-color" content="#0b0f14">
+  <title>Developer Portfolio Templates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span class="brand-text">Portfolio<span>.</span>Templates</span>
+      </a>
+      <p class="header-meta">24 role-ready starters</p>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Open catalog</p>
+        <h1>Pick a template.<br>Make it yours.</h1>
+        <p class="hero-lead">
+          Clean, self-contained HTML/CSS/JS portfolios for developers and adjacent tech roles.
+          Drop in your photo as <code>assets/avatar.jpg</code> and edit the placeholders.
+        </p>
+        <div class="hero-actions">
+          <a href="#catalog" class="btn btn-primary">Browse catalog</a>
+          <a href="#howto" class="btn btn-ghost">How to use</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <div class="section-head">
+          <h2>Template catalog</h2>
+          <p>Each folder is a complete site. Open <code>index.html</code> locally to preview.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter templates">
+          <button type="button" class="filter is-active" data-filter="all">All</button>
+          <button type="button" class="filter" data-filter="dev">Development</button>
+          <button type="button" class="filter" data-filter="ops">Ops &amp; Security</button>
+          <button type="button" class="filter" data-filter="data">Data &amp; AI</button>
+          <button type="button" class="filter" data-filter="design">Design &amp; Product</button>
+          <button type="button" class="filter" data-filter="special">Special</button>
+        </div>
+
+        <div class="grid" id="templateGrid">
+          <!-- filled by gallery.js from catalog data -->
+        </div>
+      </div>
+    </section>
+
+    <section class="howto" id="howto">
+      <div class="container howto-grid">
+        <div>
+          <h2>How to use</h2>
+          <ol class="steps">
+            <li>Open a template folder and preview <code>index.html</code>.</li>
+            <li>Replace <code>assets/avatar.jpg</code> with your portrait (3:4 works best).</li>
+            <li>Edit name, role, projects, and links in <code>index.html</code>.</li>
+            <li>Deploy the folder to any static host (GitHub Pages, Netlify, Vercel…).</li>
+          </ol>
+        </div>
+        <aside class="tip">
+          <h3>Photo tip</h3>
+          <p>Recommended: JPG/WebP, about <strong>800×1000</strong> px, face centered, soft background. If missing, initials fallback shows automatically.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Built for customization. MIT licensed where noted in repository.</p>
+      <p class="mono">&copy; <span id="year"></span> developer-portfolio</p>
+    </div>
+  </footer>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
