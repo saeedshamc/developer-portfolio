@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case Vault — Product strategist portfolio. Deep case studies in problem, solution, and measurable results.">
+  <title>Case Vault | Product Strategist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#hero" class="brand">
+        <span class="brand-mark" aria-hidden="true">CV</span>
+        <span class="brand-text">Case Vault</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#cases">Cases</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <p class="hero-kicker">Product Strategy · Case Studies</p>
+          <h1 class="hero-title">Evidence over opinion.</h1>
+          <p class="hero-lede">I turn messy product problems into documented wins — with the receipts to prove it.</p>
+          <div class="hero-actions">
+            <a href="#cases" class="btn btn-primary">Read the Cases</a>
+            <a href="#contact" class="btn btn-ghost">Start a Conversation</a>
+          </div>
+        </div>
+        <figure class="hero-portrait reveal" data-delay="120">
+          <div class="portrait-frame">
+            <img src="assets/avatar.jpg" alt="Alex Morgan" class="avatar-img" id="heroAvatar" data-fallback="CV" width="420" height="520">
+            <div class="avatar-fallback" id="heroAvatarFallback" hidden>CV</div>
+          </div>
+          <figcaption class="portrait-caption">
+            <span class="caption-name">Alex Morgan</span>
+            <span class="caption-role">Senior Product Strategist</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-index">01</span>
+          <h2 class="section-title">Briefly, who I am</h2>
+        </header>
+        <div class="about-block reveal" data-delay="80">
+          <p class="about-lead">I help B2B teams ship products that hold up under scrutiny — not just in pitch decks, but in revenue, retention, and support tickets.</p>
+          <p class="about-body">Twelve years across fintech, health tech, and SaaS. I write the case studies I wish I'd had when I was hiring strategists: clear problem framing, honest trade-offs, and numbers you can audit.</p>
+          <ul class="about-tags" aria-label="Focus areas">
+            <li>Product discovery</li>
+            <li>Go-to-market</li>
+            <li>Research &amp; validation</li>
+            <li>Stakeholder alignment</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="section section-cases" id="cases">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-index">02</span>
+          <h2 class="section-title">Case studies</h2>
+          <p class="section-desc">Three engagements, told as problem → solution → result. Select a case to read the full narrative.</p>
+        </header>
+
+        <div class="case-tabs reveal" role="tablist" aria-label="Case studies">
+          <button class="case-tab active" type="button" role="tab" id="tab-case-1" aria-selected="true" aria-controls="panel-case-1" data-case="case-1">
+            <span class="tab-label">NovaPay</span>
+            <span class="tab-meta">Onboarding · Fintech</span>
+          </button>
+          <button class="case-tab" type="button" role="tab" id="tab-case-2" aria-selected="false" aria-controls="panel-case-2" data-case="case-2">
+            <span class="tab-label">Helix Health</span>
+            <span class="tab-meta">Compliance · Health</span>
+          </button>
+          <button class="case-tab" type="button" role="tab" id="tab-case-3" aria-selected="false" aria-controls="panel-case-3" data-case="case-3">
+            <span class="tab-label">Lattice CRM</span>
+            <span class="tab-meta">Pricing · SaaS</span>
+          </button>
+        </div>
+
+        <!-- Case 1 -->
+        <article class="case-panel active" id="panel-case-1" role="tabpanel" aria-labelledby="tab-case-1" data-case="case-1">
+          <div class="case-header">
+            <span class="case-tag">Fintech · B2B payments</span>
+            <h3 class="case-title">NovaPay — cutting onboarding drop-off by half</h3>
+            <p class="case-summary">A payments platform losing 62% of sign-ups before first transaction needed a diagnosis deeper than UX polish.</p>
+          </div>
+          <div class="case-grid">
+            <div class="case-block">
+              <h4 class="case-block-title">Problem</h4>
+              <p>NovaPay's self-serve onboarding averaged 14 steps across KYC, bank linking, and API key setup. Product analytics showed a cliff at step 7 — business verification — where users abandoned without error messages. Sales blamed "bad leads"; support logged hundreds of "stuck" tickets monthly.</p>
+              <p>I ran 18 moderated sessions and mapped the flow against competitor benchmarks. Root cause: verification requirements surfaced late, after users had invested 12 minutes. Trust eroded; completion felt uncertain.</p>
+            </div>
+            <div class="case-block">
+              <h4 class="case-block-title">Solution</h4>
+              <p>We resequenced onboarding around progressive disclosure: eligibility check upfront, estimated time-to-live, and a "save &amp; resume" state persisted across devices. Partnered with compliance to pre-fill known business data via registry APIs where legally permitted.</p>
+              <p>Shipped a status dashboard showing exactly what was pending and who internally was blocking (NovaPay ops vs. bank partner). Reduced perceived opacity — the emotional driver of drop-off.</p>
+            </div>
+            <div class="case-block case-block-result">
+              <h4 class="case-block-title">Result</h4>
+              <ul class="result-metrics">
+                <li><strong>48%</strong> increase in completed onboarding (31% → 46%)</li>
+                <li><strong>−37%</strong> support tickets tagged "onboarding stuck"</li>
+                <li><strong>11 days → 4 days</strong> median time to first transaction</li>
+              </ul>
+              <p class="result-note">Case documented internally; referenced in two enterprise sales cycles that closed within the quarter.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 2 -->
+        <article class="case-panel" id="panel-case-2" role="tabpanel" aria-labelledby="tab-case-2" data-case="case-2" hidden>
+          <div class="case-header">
+            <span class="case-tag">Health tech · HIPAA</span>
+            <h3 class="case-title">Helix Health — shipping a compliant patient portal on deadline</h3>
+            <p class="case-summary">A regional clinic network needed a patient-facing portal in six months — with legal, security, and clinical stakeholders who rarely agreed.</p>
+          </div>
+          <div class="case-grid">
+            <div class="case-block">
+              <h4 class="case-block-title">Problem</h4>
+              <p>Helix had burned nine months on a vendor build that failed penetration testing. Engineering wanted to rebuild; legal wanted to pause; clinicians wanted lab results and messaging yesterday. No shared definition of MVP — every feature was "critical."</p>
+              <p>Audit logs were inconsistent; PHI exposure risk was real. The board set a hard launch date tied to a payer contract. Failure meant a seven-figure penalty clause.</p>
+            </div>
+            <div class="case-block">
+              <h4 class="case-block-title">Solution</h4>
+              <p>I facilitated a risk-ranked backlog workshop: must-have for launch vs. phase-two. Defined a compliance gate checklist co-signed by legal and the CISO — no feature shipped without passing it.</p>
+              <p>Introduced weekly "evidence reviews" — demo recordings, test results, and decision logs — so stakeholders saw progress without attending every standup. Negotiated scope trade-offs: deferred appointment scheduling to phase two; prioritized secure messaging and lab results.</p>
+            </div>
+            <div class="case-block case-block-result">
+              <h4 class="case-block-title">Result</h4>
+              <ul class="result-metrics">
+                <li><strong>Launched on day 178</strong> of 180-day window</li>
+                <li><strong>Zero</strong> critical findings in post-launch audit</li>
+                <li><strong>84%</strong> patient activation within 60 days (target was 70%)</li>
+              </ul>
+              <p class="result-note">Portal became the template for two additional clinic rollouts; internal case study adopted by the parent health system.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 3 -->
+        <article class="case-panel" id="panel-case-3" role="tabpanel" aria-labelledby="tab-case-3" data-case="case-3" hidden>
+          <div class="case-header">
+            <span class="case-tag">SaaS · Revenue</span>
+            <h3 class="case-title">Lattice CRM — redesigning pricing without churning the base</h3>
+            <p class="case-summary">A mid-market CRM needed to move from seat-based to usage-based pricing — without triggering the backlash their competitor had faced six months prior.</p>
+          </div>
+          <div class="case-grid">
+            <div class="case-block">
+              <h4 class="case-block-title">Problem</h4>
+              <p>Lattice's ARPU had flatlined for eight quarters. Power users subsidized idle seats; finance modeled a 22% revenue lift from usage tiers but feared churn among agencies with seasonal staffing. Sales had no talk track; customer success had no migration playbook.</p>
+              <p>Competitive intel showed a rival's botched rollout — public pricing page changes overnight, no grandfathering — dominated G2 reviews for months.</p>
+            </div>
+            <div class="case-block">
+              <h4 class="case-block-title">Solution</h4>
+              <p>Ran conjoint analysis with 240 customers across segments. Identified three tiers anchored on workflow automation credits, not raw seats. Built a 90-day grandfather window and a "price lock" offer for annual contracts.</p>
+              <p>Created role-specific enablement: CS got migration scripts and ROI calculators; sales got objection handlers backed by pilot data. Soft-launched to 8% of accounts with a feedback loop before full rollout.</p>
+            </div>
+            <div class="case-block case-block-result">
+              <h4 class="case-block-title">Result</h4>
+              <ul class="result-metrics">
+                <li><strong>+19% NRR</strong> within two quarters (target +15%)</li>
+                <li><strong>2.1%</strong> logo churn during migration (model predicted 4–6%)</li>
+                <li><strong>Net Promoter +6</strong> vs. pre-launch baseline</li>
+              </ul>
+              <p class="result-note">Pricing framework reused for an adjacent analytics add-on; case presented at company all-hands as the standard for major GTM changes.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Approach -->
+    <section class="section" id="approach">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-index">03</span>
+          <h2 class="section-title">How I work</h2>
+        </header>
+        <ol class="approach-list">
+          <li class="approach-item reveal">
+            <span class="approach-step">1</span>
+            <div class="approach-content">
+              <h3 class="approach-title">Frame the problem</h3>
+              <p>Interview stakeholders, read the tickets, and trace the metrics. I document assumptions before proposing solutions — so we know what we're testing.</p>
+            </div>
+          </li>
+          <li class="approach-item reveal" data-delay="60">
+            <span class="approach-step">2</span>
+            <div class="approach-content">
+              <h3 class="approach-title">Design with constraints</h3>
+              <p>Legal, engineering, and timeline limits aren't blockers — they're design inputs. Trade-offs get written down, not buried in Slack.</p>
+            </div>
+          </li>
+          <li class="approach-item reveal" data-delay="120">
+            <span class="approach-step">3</span>
+            <div class="approach-content">
+              <h3 class="approach-title">Ship &amp; measure</h3>
+              <p>Launch criteria, success metrics, and rollback plans upfront. After release, I close the loop with the numbers that matter to the business.</p>
+            </div>
+          </li>
+          <li class="approach-item reveal" data-delay="180">
+            <span class="approach-step">4</span>
+            <div class="approach-content">
+              <h3 class="approach-title">Archive the case</h3>
+              <p>Every engagement becomes a reusable narrative — problem, solution, result — so the next team doesn't start from zero.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-index">04</span>
+          <h2 class="section-title">Let's talk</h2>
+          <p class="section-desc">Have a product problem worth documenting? Tell me about it.</p>
+        </header>
+        <div class="contact-grid">
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <label class="form-label" for="name">Name</label>
+              <input class="form-input" type="text" id="name" name="name" autocomplete="name" required>
+              <span class="form-error" data-for="name" role="alert"></span>
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" id="email" name="email" autocomplete="email" required>
+              <span class="form-error" data-for="email" role="alert"></span>
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="subject">Subject</label>
+              <input class="form-input" type="text" id="subject" name="subject" required>
+              <span class="form-error" data-for="subject" role="alert"></span>
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-input form-textarea" id="message" name="message" rows="5" required></textarea>
+              <span class="form-error" data-for="message" role="alert"></span>
+            </div>
+            <button class="btn btn-primary btn-submit" type="submit">Send Message</button>
+            <p class="form-success" id="formSuccess" hidden role="status">Message sent — I'll reply within two business days.</p>
+          </form>
+          <aside class="contact-aside reveal" data-delay="100">
+            <div class="contact-card">
+              <h3 class="contact-card-title">Direct</h3>
+              <a href="mailto:alex@casevault.dev" class="contact-link">alex@casevault.dev</a>
+              <a href="https://linkedin.com" class="contact-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <p class="contact-note">Based in Chicago · Open to remote engagements across US &amp; EU time zones.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">CV</span>
+        <span>Case Vault</span>
+      </a>
+      <p class="footer-copy">&copy; <span id="year"></span> Alex Morgan. All cases anonymized where required.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
