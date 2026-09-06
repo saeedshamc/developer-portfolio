@@ -24,8 +24,13 @@ const backToTop = $("#backToTop");
 function handleScroll() {
     const scrollPosition = window.scrollY;
 
-    siteHeader.classList.toggle("scrolled", scrollPosition > 30);
-    backToTop.classList.toggle("show", scrollPosition > 500);
+    if (siteHeader) {
+        siteHeader.classList.toggle("scrolled", scrollPosition > 30);
+    }
+
+    if (backToTop) {
+        backToTop.classList.toggle("show", scrollPosition > 500);
+    }
 }
 
 window.addEventListener("scroll", handleScroll, { passive: true });
@@ -126,6 +131,7 @@ const ownerAvatar = $("#ownerAvatar");
 const avatarFallback = $("#avatarFallback");
 
 function showAvatarFallback() {
+    if (!ownerAvatar || !avatarFallback) return;
     ownerAvatar.classList.add("hidden");
     avatarFallback.classList.add("show");
 }
@@ -133,7 +139,9 @@ function showAvatarFallback() {
 if (ownerAvatar) {
     ownerAvatar.addEventListener("error", showAvatarFallback);
 
-    if (!ownerAvatar.complete || ownerAvatar.naturalWidth === 0) {
+    if (ownerAvatar.complete && ownerAvatar.naturalWidth === 0) {
+        showAvatarFallback();
+    } else {
         ownerAvatar.addEventListener("load", () => {
             if (ownerAvatar.naturalWidth === 0) {
                 showAvatarFallback();
