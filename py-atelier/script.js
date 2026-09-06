@@ -21,8 +21,13 @@ const backToTop = $("#backToTop");
 function handleScroll() {
     const y = window.scrollY;
 
-    siteHeader.classList.toggle("scrolled", y > 30);
-    backToTop.classList.toggle("show", y > 500);
+    if (siteHeader) {
+        siteHeader.classList.toggle("scrolled", y > 30);
+    }
+
+    if (backToTop) {
+        backToTop.classList.toggle("show", y > 500);
+    }
 }
 
 window.addEventListener("scroll", handleScroll, { passive: true });
