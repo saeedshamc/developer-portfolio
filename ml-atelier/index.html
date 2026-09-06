@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ML Atelier — Machine Learning &amp; AI engineer portfolio for model development, MLOps, and research.">
+    <meta name="theme-color" content="#0c0f14">
+
+    <meta property="og:title" content="ML Atelier — Machine Learning Engineer">
+    <meta property="og:description" content="Building intelligent systems — from research prototypes to production ML pipelines.">
+    <meta property="og:type" content="website">
+
+    <title>ML Atelier — Machine Learning Engineer Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-atmosphere" aria-hidden="true">
+        <div class="neural-grid"></div>
+        <div class="glow-orb orb-lime"></div>
+        <div class="glow-orb orb-cyan"></div>
+    </div>
+
+    <header class="site-header" id="top">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="#home" class="brand" aria-label="ML Atelier home">
+                <span class="brand-mark">ml.</span>
+                <span class="brand-name">Atelier</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primaryNavigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="primaryNavigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#stack" class="nav-link">ML Stack</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <a href="#contact" class="nav-cta">Get in touch</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero section" id="home">
+            <div class="container hero-layout">
+                <div class="hero-portrait reveal">
+                    <figure class="portrait-frame">
+                        <img
+                            src="assets/avatar.jpg"
+                            alt="Your Name — Machine Learning engineer"
+                            class="portrait-photo"
+                            width="480"
+                            height="560"
+                            loading="eager"
+                        >
+                        <div class="portrait-fallback" aria-hidden="true" hidden>ML</div>
+                        <figcaption class="portrait-caption">
+                            <span class="brand-signal">ml.</span>
+                            <span class="caption-text">Model craft</span>
+                        </figcaption>
+                    </figure>
+                    <div class="hero-metrics" role="group" aria-label="Key metrics">
+                        <div class="metric-chip">
+                            <span class="metric-value">12+</span>
+                            <span class="metric-label">Models shipped</span>
+                        </div>
+                        <div class="metric-chip">
+                            <span class="metric-value">3</span>
+                            <span class="metric-label">Publications</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-content reveal delay-1">
+                    <p class="hero-eyebrow">
+                        <span class="status-dot"></span>
+                        Open to ML engineering &amp; research roles
+                    </p>
+
+                    <h1>
+                        Your Name
+                        <span class="hero-sub">Machine Learning Engineer</span>
+                    </h1>
+
+                    <p class="hero-lead">
+                        I design, train, and deploy machine learning systems — from
+                        experimentation notebooks to scalable inference pipelines.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View model projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact me</a>
+                    </div>
+
+                    <ul class="hero-tags" aria-label="Focus areas">
+                        <li>Deep Learning</li>
+                        <li>MLOps</li>
+                        <li>NLP &amp; Vision</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-label">01 — About</span>
+                    <h2>Turning data into decisions</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>
+                            I'm a machine learning engineer with a passion for building
+                            models that solve real problems. My work spans computer vision,
+                            natural language processing, and recommendation systems — always
+                            with an eye toward reproducibility and production readiness.
+                        </p>
+                        <p>
+                            I thrive at the intersection of research and engineering: designing
+                            experiments, tuning architectures, and shipping models that perform
+                            reliably at scale. When I'm not training networks, I'm writing about
+                            ML best practices and contributing to open-source tooling.
+                        </p>
+
+                        <ul class="about-highlights">
+                            <li>
+                                <span class="highlight-icon" aria-hidden="true">◈</span>
+                                MS in Computer Science — ML specialization
+                            </li>
+                            <li>
+                                <span class="highlight-icon" aria-hidden="true">◈</span>
+                                5+ years building production ML systems
+                            </li>
+                            <li>
+                                <span class="highlight-icon" aria-hidden="true">◈</span>
+                                PyTorch, TensorFlow &amp; cloud-native MLOps
+                            </li>
+                        </ul>
+                    </div>
+
+                    <aside class="about-aside reveal delay-1">
+                        <div class="stat-card">
+                            <span class="stat-number">98.2%</span>
+                            <span class="stat-desc">Best model accuracy on benchmark task</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">40ms</span>
+                            <span class="stat-desc">P99 inference latency at scale</span>
+                        </div>
+                        <div class="stat-card accent-violet">
+                            <span class="stat-number">A+</span>
+                            <span class="stat-desc">Model card &amp; documentation standard</span>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- ML Stack -->
+        <section class="section section-alt" id="stack">
+            <div class="container">
+                <div class="section-heading centered reveal">
+                    <span class="section-label">02 — ML Stack</span>
+                    <h2>Tools &amp; frameworks I work with</h2>
+                    <p class="section-desc">
+                        A production-ready stack spanning experimentation, training,
+                        deployment, and monitoring.
+                    </p>
+                </div>
+
+                <div class="stack-grid">
+                    <article class="stack-card reveal">
+                        <div class="stack-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3>Frameworks</h3>
+                        <ul class="stack-list">
+                            <li>PyTorch</li>
+                            <li>TensorFlow / Keras</li>
+                            <li>scikit-learn</li>
+                            <li>Hugging Face Transformers</li>
+                        </ul>
+                    </article>
+
+                    <article class="stack-card reveal delay-1">
+                        <div class="stack-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                        </div>
+                        <h3>Data &amp; Compute</h3>
+                        <ul class="stack-list">
+                            <li>Pandas · Polars · NumPy</li>
+                            <li>Spark · Dask</li>
+                            <li>CUDA · Triton</li>
+                            <li>Weights &amp; Biases</li>
+                        </ul>
+                    </article>
+
+                    <article class="stack-card reveal delay-2">
+                        <div class="stack-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
+                        </div>
+                        <h3>MLOps &amp; Serving</h3>
+                        <ul class="stack-list">
+                            <li>MLflow · DVC</li>
+                            <li>Kubeflow · Airflow</li>
+                            <li>FastAPI · ONNX Runtime</li>
+                            <li>Docker · Kubernetes</li>
+                        </ul>
+                    </article>
+
+                    <article class="stack-card reveal delay-3">
+                        <div class="stack-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        </div>
+                        <h3>Cloud &amp; Infra</h3>
+                        <ul class="stack-list">
+                            <li>AWS SageMaker</li>
+                            <li>GCP Vertex AI</li>
+                            <li>Azure ML</li>
+                            <li>Terraform · CI/CD</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Model Projects -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="section-label">03 — Model Projects</span>
+                    <h2>Selected work</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card featured reveal">
+                        <div class="project-visual">
+                            <div class="project-badge">Production</div>
+                            <div class="project-chart" aria-hidden="true">
+                                <span style="--h:72%"></span>
+                                <span style="--h:88%"></span>
+                                <span style="--h:65%"></span>
+                                <span style="--h:94%"></span>
+                                <span style="--h:81%"></span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>Computer Vision</span>
+                                <span>PyTorch</span>
+                            </div>
+                            <h3>Real-time Defect Detection</h3>
+                            <p>
+                                Custom YOLOv8 pipeline for manufacturing QA — 94% mAP,
+                                deployed on edge GPUs with sub-50ms inference.
+                            </p>
+                            <div class="project-meta">
+                                <span>F1: 0.91</span>
+                                <span>Latency: 42ms</span>
+                            </div>
+                            <a href="#" class="project-link">View case study ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal delay-1">
+                        <div class="project-visual compact">
+                            <div class="project-badge">Research</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>NLP</span>
+                                <span>Transformers</span>
+                            </div>
+                            <h3>Domain-Adaptive LLM Fine-tuning</h3>
+                            <p>
+                                LoRA fine-tuning of a 7B model for legal document
+                                summarization with RAG augmentation.
+                            </p>
+                            <div class="project-meta">
+                                <span>ROUGE-L: 0.47</span>
+                            </div>
+                            <a href="#" class="project-link">View case study ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal delay-2">
+                        <div class="project-visual compact">
+                            <div class="project-badge">MLOps</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>RecSys</span>
+                                <span>Kubeflow</span>
+                            </div>
+                            <h3>Recommendation Engine v2</h3>
+                            <p>
+                                Two-tower neural recommender serving 2M daily users
+                                with A/B-tested ranking and drift monitoring.
+                            </p>
+                            <div class="project-meta">
+                                <span>CTR +18%</span>
+                            </div>
+                            <a href="#" class="project-link">View case study ↗</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research / Notes -->
+        <section class="section section-alt" id="research">
+            <div class="container">
+                <div class="section-heading centered reveal">
+                    <span class="section-label">04 — Research &amp; Notes</span>
+                    <h2>Writing &amp; experiments</h2>
+                    <p class="section-desc">
+                        Papers, blog posts, and lab notes from ongoing ML research.
+                    </p>
+                </div>
+
+                <div class="research-grid">
+                    <article class="research-card reveal">
+                        <time class="research-date" datetime="2025-11">Nov 2025</time>
+                        <h3>Efficient Attention for Long-Context Models</h3>
+                        <p>
+                            Exploring sliding-window and sparse attention patterns
+                            to reduce memory footprint on 32k-token sequences.
+                        </p>
+                        <a href="#" class="research-link">Read paper ↗</a>
+                    </article>
+
+                    <article class="research-card reveal delay-1">
+                        <time class="research-date" datetime="2025-08">Aug 2025</time>
+                        <h3>Model Drift Detection in Production</h3>
+                        <p>
+                            A practical guide to statistical tests and monitoring
+                            dashboards for catching data &amp; concept drift early.
+                        </p>
+                        <a href="#" class="research-link">Read article ↗</a>
+                    </article>
+
+                    <article class="research-card reveal delay-2">
+                        <time class="research-date" datetime="2025-05">May 2025</time>
+                        <h3>Quantization Trade-offs for Edge Deployment</h3>
+                        <p>
+                            Benchmarking INT8 vs FP16 inference on mobile NPUs —
+                            accuracy, latency, and power consumption analysis.
+                        </p>
+                        <a href="#" class="research-link">Read notes ↗</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-heading centered reveal">
+                    <span class="section-label">05 — Experience</span>
+                    <h2>Where I've applied ML</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <time datetime="2023">2023 — Present</time>
+                            <h3>Senior ML Engineer</h3>
+                            <p class="timeline-org">TechCorp AI · San Francisco, CA</p>
+                            <p>
+                                Lead a team of 4 building computer vision and NLP products.
+                                Architected end-to-end MLOps pipeline reducing deployment
+                                time from weeks to hours.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <time datetime="2021">2021 — 2023</time>
+                            <h3>Machine Learning Engineer</h3>
+                            <p class="timeline-org">DataScale Inc · Remote</p>
+                            <p>
+                                Built recommendation and forecasting models serving
+                                500K+ users. Implemented feature stores and model
+                                versioning with MLflow.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <time datetime="2019">2019 — 2021</time>
+                            <h3>Research Assistant — ML Lab</h3>
+                            <p class="timeline-org">State University · Boston, MA</p>
+                            <p>
+                                Published 2 papers on transfer learning for medical imaging.
+                                Developed PyTorch training pipelines for multi-GPU clusters.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section section-contact" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-intro reveal">
+                    <span class="section-label">06 — Contact</span>
+                    <h2>Let's train something great</h2>
+                    <p>
+                        Open to ML engineering roles, consulting, and research
+                        collaborations. I typically respond within one business day.
+                    </p>
+
+                    <ul class="contact-details">
+                        <li>
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:hello@example.com">hello@example.com</a>
+                        </li>
+                        <li>
+                            <span class="contact-label">GitHub</span>
+                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">@yourusername</a>
+                        </li>
+                        <li>
+                            <span class="contact-label">LinkedIn</span>
+                            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">/in/yourusername</a>
+                        </li>
+                        <li>
+                            <span class="contact-label">Location</span>
+                            <span>San Francisco, CA · Remote-friendly</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-form-wrapper reveal delay-1">
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" autocomplete="name" required placeholder="Jane Doe">
+                                <span class="form-error" id="nameError">Please enter your name.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" autocomplete="email" required placeholder="jane@example.com">
+                                <span class="form-error" id="emailError">Please enter a valid email.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your ML project…"></textarea>
+                            <span class="form-error" id="messageError">Please enter a message (at least 10 characters).</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit">Send message</button>
+
+                        <p class="form-success" id="formSuccess" role="status" aria-live="polite">
+                            Thank you — your message has been sent.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a href="#home" class="footer-brand">
+                <span class="brand-mark">ml.</span> Atelier
+            </a>
+            <p>&copy; <span id="year"></span> Your Name. Built for intelligent systems.</p>
+            <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑ Top</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
