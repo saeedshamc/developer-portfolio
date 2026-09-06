@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IoT Signal — Embedded &amp; IoT Engineer portfolio. Firmware, hardware design, and connected device systems.">
+  <meta name="theme-color" content="#0b1020">
+  <title>IoT Signal | Embedded &amp; IoT Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="circuit-bg" aria-hidden="true">
+    <svg class="circuit-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="traceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#fb923c" stop-opacity="0.12"/>
+          <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.06"/>
+        </linearGradient>
+      </defs>
+      <g stroke="url(#traceGrad)" stroke-width="1" fill="none">
+        <path d="M0 180 L180 180 L220 140 L380 140 L420 180 L640 180"/>
+        <path d="M640 180 L680 220 L860 220 L900 180 L1200 180 L1440 160"/>
+        <path d="M0 420 L160 420 L200 380 L360 380 L400 420 L580 420 L620 460 L800 460"/>
+        <path d="M800 460 L840 420 L1100 420 L1140 460 L1440 440"/>
+        <path d="M320 0 L320 140 L360 180 L360 380 L400 420 L400 620 L440 660 L440 900"/>
+        <path d="M900 180 L900 220 L860 260 L860 460 L900 500 L900 720 L940 760 L940 900"/>
+      </g>
+      <g fill="#22d3ee" opacity="0.3">
+        <circle cx="180" cy="180" r="3"/><circle cx="420" cy="180" r="4"/>
+        <circle cx="640" cy="180" r="3"/><circle cx="900" cy="180" r="4"/>
+        <circle cx="400" cy="420" r="3"/><circle cx="800" cy="460" r="4"/>
+        <circle cx="360" cy="380" r="3"/><circle cx="900" cy="500" r="3"/>
+      </g>
+      <g fill="#fb923c" opacity="0.25">
+        <rect x="214" y="134" width="12" height="12" rx="2"/>
+        <rect x="674" y="214" width="12" height="12" rx="2"/>
+        <rect x="394" y="614" width="12" height="12" rx="2"/>
+        <rect x="894" y="714" width="12" height="12" rx="2"/>
+      </g>
+    </svg>
+    <div class="signal-pulse pulse-a"></div>
+    <div class="signal-pulse pulse-b"></div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="brand">
+        <span class="brand-mark">IS</span>
+        <span class="brand-name">IoT<span class="brand-accent">Signal</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#projects">Devices</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-brand reveal">
+          <span class="hero-brand-mark">IS</span>
+          <span class="hero-brand-text">IoT<span>Signal</span></span>
+        </div>
+        <div class="hero-composition">
+          <div class="hero-photo reveal" data-delay="80">
+            <div class="photo-ring"></div>
+            <div class="photo-frame">
+              <img src="assets/avatar.jpg" alt="Your Name" class="avatar-img" id="heroAvatar" data-fallback="IS">
+              <div class="avatar-fallback" id="heroAvatarFallback" hidden>IS</div>
+            </div>
+            <div class="photo-signal" aria-hidden="true"></div>
+          </div>
+          <div class="hero-copy reveal" data-delay="160">
+            <p class="hero-role">Embedded Engineer · IoT Engineer</p>
+            <h1 class="hero-title">Firmware that bridges silicon &amp; cloud.</h1>
+            <p class="hero-desc">I design connected devices from PCB to protocol stack — RTOS firmware, sensor fusion, and OTA pipelines that survive the field.</p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">View Device Projects</a>
+              <a href="#contact" class="btn btn-ghost">Start a Build</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 — About</span>
+          <h2 class="section-title">Engineering at the edge of hardware &amp; software.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm <strong>Your Name</strong>, an embedded and IoT engineer with 7+ years shipping production devices — from bare-metal bootloaders to MQTT telemetry pipelines. I care about power budgets, EMI margins, and firmware that degrades gracefully when connectivity drops.</p>
+            <p>From industrial sensor nodes to consumer wearables, I bridge schematic review, RTOS task design, and cloud integration with C, Rust, and Python tooling that keeps teams shipping on schedule.</p>
+          </div>
+          <div class="about-aside reveal" data-delay="100">
+            <ul class="about-list">
+              <li><span class="about-label">Focus</span>Embedded systems &amp; IoT architecture</li>
+              <li><span class="about-label">Stack</span>STM32 · ESP32 · FreeRTOS · MQTT</li>
+              <li><span class="about-label">Based</span>Remote · Open to on-site labs</li>
+            </ul>
+            <ul class="about-stats">
+              <li><span class="stat-num">30+</span><span class="stat-label">Devices shipped</span></li>
+              <li><span class="stat-num">12</span><span class="stat-label">PCB revisions</span></li>
+              <li><span class="stat-num">5yr</span><span class="stat-label">Field uptime avg</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hardware / Firmware Stack -->
+    <section class="section section-alt" id="stack">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 — Hardware / Firmware Stack</span>
+          <h2 class="section-title">Full-stack capability from silicon to server.</h2>
+        </div>
+        <div class="stack-grid">
+          <article class="stack-card reveal">
+            <div class="stack-icon mono">MCU</div>
+            <h3>Microcontrollers &amp; RTOS</h3>
+            <p>Bare-metal and RTOS firmware on ARM Cortex-M, ESP32, and nRF platforms with deterministic timing and low-power sleep modes.</p>
+            <ul class="stack-tags">
+              <li>STM32</li><li>ESP32</li><li>nRF52</li><li>FreeRTOS</li><li>Zephyr</li>
+            </ul>
+          </article>
+          <article class="stack-card reveal" data-delay="80">
+            <div class="stack-icon mono">HW</div>
+            <h3>Hardware Design</h3>
+            <p>Schematic capture, PCB layout review, BOM optimization, and bring-up debug with oscilloscope &amp; logic analyzer workflows.</p>
+            <ul class="stack-tags">
+              <li>KiCad</li><li>Altium</li><li>SPICE</li><li>EMI/EMC</li>
+            </ul>
+          </article>
+          <article class="stack-card reveal" data-delay="160">
+            <div class="stack-icon mono">COM</div>
+            <h3>Connectivity &amp; Protocols</h3>
+            <p>Wi-Fi, BLE, LoRa, and cellular modems with MQTT, CoAP, Modbus, and custom binary framing over UART/SPI/I2C.</p>
+            <ul class="stack-tags">
+              <li>MQTT</li><li>BLE</li><li>LoRaWAN</li><li>Modbus</li><li>CAN</li>
+            </ul>
+          </article>
+          <article class="stack-card reveal" data-delay="240">
+            <div class="stack-icon mono">SEN</div>
+            <h3>Sensors &amp; Drivers</h3>
+            <p>Driver development for IMU, environmental, and industrial sensors with calibration, filtering, and fusion algorithms.</p>
+            <ul class="stack-tags">
+              <li>I2C</li><li>SPI</li><li>ADC/DAC</li><li>Kalman</li>
+            </ul>
+          </article>
+          <article class="stack-card reveal" data-delay="320">
+            <div class="stack-icon mono">OTA</div>
+            <h3>OTA &amp; Security</h3>
+            <p>Signed firmware updates, secure boot, flash partitioning, and TLS stacks for devices that must stay patched in the field.</p>
+            <ul class="stack-tags">
+              <li>MCUboot</li><li>TLS</li><li>AES</li><li>Secure Boot</li>
+            </ul>
+          </article>
+          <article class="stack-card reveal" data-delay="400">
+            <div class="stack-icon mono">CLD</div>
+            <h3>Cloud &amp; Tooling</h3>
+            <p>Device provisioning, telemetry ingestion, CI/CD for firmware, and Python/Rust test harnesses for hardware-in-the-loop.</p>
+            <ul class="stack-tags">
+              <li>AWS IoT</li><li>Azure IoT</li><li>PlatformIO</li><li>pytest</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Device Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 — Device Projects</span>
+          <h2 class="section-title">Hardware that ships and stays online.</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-preview preview-a">
+              <div class="project-board">
+                <span class="board-chip"></span>
+                <span class="board-trace"></span>
+                <span class="board-trace short"></span>
+                <span class="board-led"></span>
+                <span class="board-antenna"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-type">Industrial IoT</span>
+              <h3>Sentinel Node v3</h3>
+              <p>LoRaWAN environmental monitor with 5-year battery life, dual-MCU fail-safe, and OTA via gateway relay.</p>
+              <div class="project-meta">
+                <span>STM32L4</span><span>LoRa</span><span>FreeRTOS</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal" data-delay="100">
+            <div class="project-preview preview-b">
+              <div class="project-board">
+                <span class="board-chip wide"></span>
+                <span class="board-trace"></span>
+                <span class="board-sensor"></span>
+                <span class="board-sensor"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-type">Wearable</span>
+              <h3>PulseTrack Band</h3>
+              <p>BLE wearable with PPG heart-rate, IMU activity classification, and 7-day battery via aggressive duty cycling.</p>
+              <div class="project-meta">
+                <span>nRF52840</span><span>BLE 5</span><span>Rust</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal" data-delay="200">
+            <div class="project-preview preview-c">
+              <div class="project-board">
+                <span class="board-chip"></span>
+                <span class="board-trace long"></span>
+                <span class="board-module"></span>
+                <span class="board-led blink"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-type">Smart Home</span>
+              <h3>Mesh Relay Hub</h3>
+              <p>ESP32 mesh gateway bridging Zigbee sensors to MQTT cloud with local rule engine and offline fallback.</p>
+              <div class="project-meta">
+                <span>ESP32-S3</span><span>MQTT</span><span>Edge Rules</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 — Experience</span>
+          <h2 class="section-title">Roles shaped by production hardware.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2021 — Present</span>
+              <h3>Senior Embedded Engineer</h3>
+              <p class="timeline-company">SignalWorks IoT</p>
+              <p>Led firmware architecture for a fleet of 12k+ field devices. Cut OTA failure rate by 85% with A/B partitions and rollback logic.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="80">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2018 — 2021</span>
+              <h3>Embedded Software Engineer</h3>
+              <p class="timeline-company">Nova Sensors Ltd</p>
+              <p>Developed RTOS drivers for industrial ADC front-ends and built HIL test rigs that reduced regression cycles from weeks to days.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="160">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2016 — 2018</span>
+              <h3>Hardware Engineer</h3>
+              <p class="timeline-company">Circuit Lab Co.</p>
+              <p>Designed and validated 8 PCB revisions for consumer electronics, from schematic to EMC pre-compliance testing.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="section-tag">05 — Contact</span>
+            <h2 class="section-title">Let's prototype something real.</h2>
+            <p>Open to embedded leadership roles, firmware contracts, and hardware bring-up engagements.</p>
+            <ul class="contact-links">
+              <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://hackaday.io" target="_blank" rel="noopener noreferrer">Hackaday</a></li>
+            </ul>
+          </div>
+          <form class="contact-form reveal" data-delay="100" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your name">
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com">
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Tell me about your device or firmware challenge…"></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-success" id="formSuccess" hidden>Message sent — I'll get back to you soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="brand brand-sm">
+        <span class="brand-mark">IS</span>
+        <span class="brand-name">IoT<span class="brand-accent">Signal</span></span>
+      </a>
+      <p>&copy; <span id="year"></span> Your Name. Built for the edge.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
