@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="API Sand — Backend engineer portfolio. RESTful APIs, distributed systems, databases, and server architecture.">
+  <meta name="theme-color" content="#f3efe8">
+  <title>API Sand | Backend Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="sand-bg" aria-hidden="true">
+    <div class="sand-grain"></div>
+    <div class="sand-glow"></div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="brand">
+        <span class="brand-mark">AS</span>
+        <span class="brand-name">API Sand</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <div class="hero-brand-row">
+            <span class="hero-badge">Backend Engineer</span>
+            <span class="hero-status"><span class="status-dot"></span>Systems online</span>
+          </div>
+          <h1 class="hero-title">Building resilient APIs on foundations that stay steady under load.</h1>
+          <p class="hero-desc">I design and ship backend infrastructure — REST &amp; GraphQL APIs, database layers, message queues, and observability — with clarity, uptime, and long-term maintainability.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View API Projects</a>
+            <a href="#contact" class="btn btn-outline">Start a Conversation</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" data-delay="120">
+          <div class="hero-frame">
+            <div class="frame-edge frame-edge--top"></div>
+            <div class="frame-edge frame-edge--bottom"></div>
+            <div class="avatar-wrap">
+              <img src="assets/avatar.jpg" alt="Your Name" class="avatar-img" data-fallback="AS">
+              <div class="avatar-fallback" hidden>AS</div>
+            </div>
+            <div class="hero-meta">
+              <span class="meta-name">Your Name</span>
+              <span class="meta-role">Senior Backend Engineer</span>
+              <span class="meta-stack">Node · Go · PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 — About</span>
+          <h2 class="section-title">Engineering backends with precision and restraint.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm <strong>Your Name</strong>, a backend engineer with 7+ years building production APIs and data systems for high-traffic platforms. I focus on clean contracts, predictable latency, and schemas that teams can trust.</p>
+            <p>From monolith migrations to event-driven microservices, I work across the full server stack — design, implementation, deployment, and the monitoring that keeps systems honest.</p>
+            <ul class="about-stats">
+              <li><span class="stat-num">50M+</span><span class="stat-label">Daily API requests served</span></li>
+              <li><span class="stat-num">12</span><span class="stat-label">Production services owned</span></li>
+              <li><span class="stat-num">99.9%</span><span class="stat-label">Target uptime maintained</span></li>
+            </ul>
+          </div>
+          <div class="about-panel reveal" data-delay="100">
+            <div class="panel-header">
+              <span class="panel-dot"></span>
+              <span>profile.json</span>
+            </div>
+            <pre class="panel-code"><code>{
+  "role": "Backend Engineer",
+  "focus": ["APIs", "Databases", "Queues"],
+  "location": "Your City",
+  "available": true
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Backend Stack -->
+    <section class="section section-alt" id="stack">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 — Backend Stack</span>
+          <h2 class="section-title">Tools across the server layer.</h2>
+        </div>
+        <div class="stack-grid">
+          <article class="stack-card reveal">
+            <div class="stack-icon">ND</div>
+            <h3>Node.js</h3>
+            <p>Express, Fastify, NestJS — REST APIs, WebSockets, and TypeScript services with structured middleware pipelines.</p>
+            <ul class="stack-tags"><li>Express</li><li>NestJS</li><li>TypeScript</li></ul>
+          </article>
+          <article class="stack-card reveal" data-delay="60">
+            <div class="stack-icon">GO</div>
+            <h3>Go</h3>
+            <p>High-throughput microservices, gRPC endpoints, and concurrent workers with minimal memory footprint.</p>
+            <ul class="stack-tags"><li>gRPC</li><li>Chi</li><li>Concurrency</li></ul>
+          </article>
+          <article class="stack-card reveal" data-delay="120">
+            <div class="stack-icon">JV</div>
+            <h3>Java</h3>
+            <p>Spring Boot services, JVM tuning, and enterprise integration patterns for long-lived backend systems.</p>
+            <ul class="stack-tags"><li>Spring Boot</li><li>Maven</li><li>JPA</li></ul>
+          </article>
+          <article class="stack-card reveal" data-delay="180">
+            <div class="stack-icon">DB</div>
+            <h3>Databases</h3>
+            <p>PostgreSQL schema design, query optimization, migrations, and replication strategies for data integrity.</p>
+            <ul class="stack-tags"><li>PostgreSQL</li><li>MongoDB</li><li>SQL</li></ul>
+          </article>
+          <article class="stack-card reveal" data-delay="240">
+            <div class="stack-icon">RD</div>
+            <h3>Redis</h3>
+            <p>Caching layers, session stores, rate limiting, and pub/sub for real-time backend coordination.</p>
+            <ul class="stack-tags"><li>Cache</li><li>Pub/Sub</li><li>Rate Limit</li></ul>
+          </article>
+          <article class="stack-card reveal" data-delay="300">
+            <div class="stack-icon">QU</div>
+            <h3>Queues</h3>
+            <p>RabbitMQ, Kafka, and SQS for async processing, event sourcing, and decoupled service communication.</p>
+            <ul class="stack-tags"><li>Kafka</li><li>RabbitMQ</li><li>SQS</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- API Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 — API Projects</span>
+          <h2 class="section-title">Selected backend work.</h2>
+        </div>
+        <div class="projects-list">
+          <article class="project-card reveal">
+            <div class="project-endpoint">GET /api/v2/orders</div>
+            <h3>Order Processing API — E-Commerce Platform</h3>
+            <p>Rebuilt order service from monolith to Go microservice handling 2M daily transactions with idempotent writes and PostgreSQL partitioning.</p>
+            <ul class="project-tags"><li>Go</li><li>PostgreSQL</li><li>Kafka</li><li>Docker</li></ul>
+          </article>
+          <article class="project-card reveal" data-delay="80">
+            <div class="project-endpoint">POST /graphql</div>
+            <h3>Unified GraphQL Gateway</h3>
+            <p>Node.js federation layer aggregating 8 downstream REST services, reducing client round-trips by 70% with DataLoader batching.</p>
+            <ul class="project-tags"><li>Node.js</li><li>GraphQL</li><li>Redis</li></ul>
+          </article>
+          <article class="project-card reveal" data-delay="160">
+            <div class="project-endpoint">WS /events/stream</div>
+            <h3>Real-Time Event Pipeline</h3>
+            <p>WebSocket fan-out backed by Redis pub/sub and Kafka consumers, delivering sub-100ms latency for 50K concurrent connections.</p>
+            <ul class="project-tags"><li>WebSockets</li><li>Redis</li><li>Kafka</li></ul>
+          </article>
+          <article class="project-card reveal" data-delay="240">
+            <div class="project-endpoint">PUT /api/auth/token</div>
+            <h3>Auth &amp; Rate-Limit Service</h3>
+            <p>JWT issuance with refresh rotation, OAuth2 flows, and Redis-backed sliding-window rate limits protecting upstream APIs.</p>
+            <ul class="project-tags"><li>Java</li><li>Spring Security</li><li>Redis</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 — Experience</span>
+          <h2 class="section-title">Career timeline.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2021">2021 — Present</time>
+              <h3>Senior Backend Engineer</h3>
+              <p class="timeline-org">DataForge Systems</p>
+              <p>Own core API platform serving 50M+ daily requests. Led migration to event-driven architecture and established team API design standards.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="100">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2018">2018 — 2021</time>
+              <h3>Backend Developer</h3>
+              <p class="timeline-org">CloudStack Labs</p>
+              <p>Built payment and inventory microservices in Node.js and Go. Introduced Redis caching that cut p95 latency from 420ms to 85ms.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="200">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2016">2016 — 2018</time>
+              <h3>Junior Software Engineer</h3>
+              <p class="timeline-org">ServerLogic Inc.</p>
+              <p>Maintained Java Spring Boot services, wrote SQL migrations, and supported on-call rotation for production incident response.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">05 — Contact</span>
+          <h2 class="section-title">Let's build something that holds up in production.</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p>Available for full-time roles, contract backend work, and architecture consulting. Typical response within 48 hours.</p>
+            <ul class="contact-links">
+              <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+              <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+          </div>
+          <form class="contact-form reveal" data-delay="100" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+              <span class="form-error" data-for="name"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+              <span class="form-error" data-for="email"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+              <span class="form-error" data-for="subject"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="form-error" data-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-success" id="formSuccess" hidden>Message sent successfully. I'll be in touch soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="brand brand-sm">
+        <span class="brand-mark">AS</span>
+        <span class="brand-name">API Sand</span>
+      </a>
+      <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
