@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Data Prism — Data Scientist, Analytics &amp; Data Engineer portfolio. Python, SQL, Spark, and BI insights that drive decisions.">
+  <meta name="theme-color" content="#f0f4f8">
+  <title>Data Prism | Data Science &amp; Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true">
+    <div class="prism prism-a"></div>
+    <div class="prism prism-b"></div>
+    <div class="grid-lines"></div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="brand">
+        <span class="brand-mark">DP</span>
+        <span class="brand-name">Data<span class="brand-accent">Prism</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Analyses</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-brand reveal">
+          <span class="hero-brand-mark">DP</span>
+          <span class="hero-brand-text">Data<span>Prism</span></span>
+        </div>
+        <div class="hero-composition">
+          <div class="hero-photo reveal" data-delay="80">
+            <div class="photo-prism-ring" aria-hidden="true"></div>
+            <div class="photo-frame">
+              <img src="assets/avatar.jpg" alt="Your Name" class="avatar-img" id="heroAvatar" data-fallback="DP">
+              <div class="avatar-fallback" id="heroAvatarFallback" hidden>DP</div>
+            </div>
+            <div class="hero-chart-mini" aria-hidden="true">
+              <span class="bar b1"></span>
+              <span class="bar b2"></span>
+              <span class="bar b3"></span>
+              <span class="bar b4"></span>
+            </div>
+          </div>
+          <div class="hero-copy reveal" data-delay="160">
+            <p class="hero-role">Data Scientist · Analytics · Data Engineer</p>
+            <h1 class="hero-title">Turning raw signals into clear decisions.</h1>
+            <p class="hero-desc">I build pipelines, models, and dashboards that help teams see patterns — from warehouse SQL to production ML and executive BI.</p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">View Analyses</a>
+              <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+            </div>
+            <dl class="hero-stats">
+              <div><dt>6+</dt><dd>Years in data</dd></div>
+              <div><dt>40+</dt><dd>Pipelines shipped</dd></div>
+              <div><dt>12</dt><dd>Models in prod</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 — About</span>
+          <h2 class="section-title">Where data meets narrative.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm <strong>Your Name</strong>, a data scientist and engineer who bridges analytics, engineering, and business strategy. I design end-to-end data products — from ingestion and modeling to the dashboards executives actually use.</p>
+            <p>Whether it's forecasting churn, optimizing ETL, or building self-serve BI, I focus on reproducible workflows and insights that survive beyond the notebook.</p>
+          </div>
+          <div class="about-aside reveal" data-delay="100">
+            <ul class="about-list">
+              <li><span class="about-label">Focus</span>Analytics &amp; ML pipelines</li>
+              <li><span class="about-label">Stack</span>Python · SQL · Spark · dbt</li>
+              <li><span class="about-label">BI</span>Tableau · Looker · Power BI</li>
+              <li><span class="about-label">Based</span>Remote · Open to hybrid</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 — Skills</span>
+          <h2 class="section-title">Full-stack data capability.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 18V6l8-3 8 3v12l-8 3-8-3z"/><path d="M12 3v18M4 6l8 3 8-3"/></svg>
+            </div>
+            <h3>Python &amp; ML</h3>
+            <p>Feature engineering, model training, and MLOps with scikit-learn, pandas, and production deployment patterns.</p>
+            <ul class="skill-tags">
+              <li>pandas</li><li>scikit-learn</li><li>XGBoost</li><li>Airflow</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="80">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/></svg>
+            </div>
+            <h3>SQL &amp; Warehousing</h3>
+            <p>Complex joins, window functions, and dimensional modeling across Snowflake, BigQuery, and PostgreSQL.</p>
+            <ul class="skill-tags">
+              <li>SQL</li><li>dbt</li><li>Snowflake</li><li>BigQuery</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="160">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3>Spark &amp; Pipelines</h3>
+            <p>Distributed ETL, streaming ingestion, and lakehouse architecture at scale with PySpark and Delta Lake.</p>
+            <ul class="skill-tags">
+              <li>PySpark</li><li>Kafka</li><li>Delta</li><li>Databricks</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="240">
+            <div class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="M7 16l4-6 4 3 5-8"/></svg>
+            </div>
+            <h3>BI &amp; Visualization</h3>
+            <p>Executive dashboards, self-serve metrics layers, and storytelling that connects KPIs to action.</p>
+            <ul class="skill-tags">
+              <li>Tableau</li><li>Looker</li><li>Power BI</li><li>Plotly</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects / Analyses -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 — Projects &amp; Analyses</span>
+          <h2 class="section-title">Work that moved the needle.</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-viz" aria-hidden="true">
+              <div class="viz-bars">
+                <span style="--h:72%"></span>
+                <span style="--h:48%"></span>
+                <span style="--h:91%"></span>
+                <span style="--h:56%"></span>
+                <span style="--h:84%"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-type">Churn Prediction</span>
+              <h3>Customer Retention Model</h3>
+              <p>Built a gradient-boosted classifier on 2M+ records; reduced voluntary churn 18% through targeted outreach cohorts.</p>
+              <ul class="project-tags">
+                <li>Python</li><li>XGBoost</li><li>Airflow</li>
+              </ul>
+            </div>
+          </article>
+          <article class="project-card reveal" data-delay="80">
+            <div class="project-viz viz-line" aria-hidden="true">
+              <svg viewBox="0 0 120 48" preserveAspectRatio="none">
+                <polyline points="0,40 20,32 40,36 60,18 80,24 100,8 120,14" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="project-body">
+              <span class="project-type">Revenue Analytics</span>
+              <h3>Self-Serve Metrics Layer</h3>
+              <p>Designed dbt models and Looker explores for finance; cut ad-hoc report requests by 70% within one quarter.</p>
+              <ul class="project-tags">
+                <li>dbt</li><li>Looker</li><li>Snowflake</li>
+              </ul>
+            </div>
+          </article>
+          <article class="project-card reveal" data-delay="160">
+            <div class="project-viz viz-donut" aria-hidden="true">
+              <div class="donut-ring"></div>
+            </div>
+            <div class="project-body">
+              <span class="project-type">Pipeline Engineering</span>
+              <h3>Real-Time Event Lakehouse</h3>
+              <p>Migrated batch ETL to Spark Structured Streaming; sub-5-minute latency for product analytics at 50K events/sec.</p>
+              <ul class="project-tags">
+                <li>PySpark</li><li>Kafka</li><li>Delta Lake</li>
+              </ul>
+            </div>
+          </article>
+          <article class="project-card reveal" data-delay="240">
+            <div class="project-viz viz-scatter" aria-hidden="true">
+              <span class="dot" style="--x:20%;--y:70%"></span>
+              <span class="dot" style="--x:35%;--y:45%"></span>
+              <span class="dot accent" style="--x:55%;--y:30%"></span>
+              <span class="dot" style="--x:72%;--y:55%"></span>
+              <span class="dot accent" style="--x:85%;--y:22%"></span>
+            </div>
+            <div class="project-body">
+              <span class="project-type">A/B Testing</span>
+              <h3>Experimentation Framework</h3>
+              <p>Standardized statistical testing across 12 product teams with automated power analysis and guardrail metrics.</p>
+              <ul class="project-tags">
+                <li>Python</li><li>Statsmodels</li><li>Tableau</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 — Experience</span>
+          <h2 class="section-title">Roles across the data lifecycle.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2022 — Present</span>
+              <h3>Senior Data Scientist</h3>
+              <p class="timeline-company">Nexus Analytics</p>
+              <p>Lead ML initiatives for retention and pricing. Own the experimentation platform and mentor a team of three analysts.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="80">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2019 — 2022</span>
+              <h3>Data Engineer</h3>
+              <p class="timeline-company">Streamline Health</p>
+              <p>Built the company lakehouse on Databricks, migrated 200+ legacy reports to dbt, and established data quality SLAs.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="160">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2017 — 2019</span>
+              <h3>Analytics Engineer</h3>
+              <p class="timeline-company">Bright Metrics Co.</p>
+              <p>Delivered BI dashboards for SaaS clients, designed star-schema warehouses, and automated weekly KPI reporting.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="section-tag">05 — Contact</span>
+            <h2 class="section-title">Let's explore your data story.</h2>
+            <p>Open to data science leadership, analytics engineering contracts, and ML pipeline consulting.</p>
+            <ul class="contact-links">
+              <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://kaggle.com" target="_blank" rel="noopener noreferrer">Kaggle</a></li>
+            </ul>
+          </div>
+          <form class="contact-form reveal" data-delay="100" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your name">
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com">
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Tell me about your data challenge…"></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-success" id="formSuccess" hidden>Message sent — I'll get back to you soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="brand brand-sm">
+        <span class="brand-mark">DP</span>
+        <span class="brand-name">Data<span class="brand-accent">Prism</span></span>
+      </a>
+      <p>&copy; <span id="year"></span> Your Name. Insights with clarity.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
