@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cyber Ice — Security Engineer portfolio. SOC operations, penetration testing, and cloud security.">
+  <title>Cyber Ice | Security Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="frost-bg" aria-hidden="true"></div>
+  <div class="ice-glow" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2L4 8v8c0 7.2 5.1 13.9 12 15 6.9-1.1 12-7.8 12-15V8L16 2z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <path d="M12 16l3 3 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">Cyber Ice</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <p class="hero-label">Security Engineer · SOC · Ethical Hacking</p>
+          <h1 class="hero-title">Defending systems before threats become breaches.</h1>
+          <p class="hero-desc">I design resilient security programs — from SIEM detection to offensive validation — for organizations that cannot afford downtime.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Engagements</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" data-delay="150">
+          <div class="hero-frame">
+            <div class="hero-frame-border"></div>
+            <div class="avatar-wrap">
+              <img src="assets/avatar.jpg" alt="Your Name" class="avatar-img" id="heroAvatar" data-fallback="CI">
+              <div class="avatar-fallback" id="heroAvatarFallback" hidden>CI</div>
+            </div>
+            <div class="hero-meta">
+              <span class="meta-tag">Your Name</span>
+              <span class="meta-role">Senior Security Engineer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 — About</span>
+          <h2 class="section-title">Security built on visibility, not guesswork.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <img src="assets/avatar.jpg" alt="Your Name" class="avatar-img" data-fallback="CI">
+            <div class="avatar-fallback about-fallback" hidden>CI</div>
+          </div>
+          <div class="about-text reveal" data-delay="100">
+            <p>I'm <strong>Your Name</strong>, a security engineer with 8+ years across SOC operations, network defense, and authorized penetration testing. I translate threat intelligence into actionable controls — reducing mean time to detect and contain without slowing the business.</p>
+            <p>My work spans enterprise SIEM tuning, cloud posture management, and red-team engagements that expose gaps before adversaries do. I believe the best security is measurable, repeatable, and aligned with how teams actually operate.</p>
+            <ul class="about-stats">
+              <li><span class="stat-num">500+</span><span class="stat-label">Incidents triaged</span></li>
+              <li><span class="stat-num">40+</span><span class="stat-label">Pentest engagements</span></li>
+              <li><span class="stat-num">12</span><span class="stat-label">Cloud environments secured</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise -->
+    <section class="section section-alt" id="expertise">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 — Expertise</span>
+          <h2 class="section-title">Core capabilities</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon">SIEM</div>
+            <h3>SIEM &amp; Detection</h3>
+            <p>Splunk, Elastic, Sentinel rule engineering, threat hunting, and alert fatigue reduction.</p>
+            <ul class="skill-tags">
+              <li>Splunk</li><li>Elastic</li><li>Sigma</li><li>MITRE ATT&amp;CK</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="80">
+            <div class="skill-icon">NET</div>
+            <h3>Network Security</h3>
+            <p>Firewall architecture, IDS/IPS tuning, segmentation, and zero-trust network design.</p>
+            <ul class="skill-tags">
+              <li>Palo Alto</li><li>Snort</li><li>Wireshark</li><li>VPN</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="160">
+            <div class="skill-icon">PEN</div>
+            <h3>Penetration Testing</h3>
+            <p>External, internal, and web app assessments with structured reporting and remediation guidance.</p>
+            <ul class="skill-tags">
+              <li>Burp Suite</li><li>Metasploit</li><li>Nmap</li><li>OSCP</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="240">
+            <div class="skill-icon">CLD</div>
+            <h3>Cloud Security</h3>
+            <p>AWS/Azure posture reviews, IAM hardening, CSPM, and container security baselines.</p>
+            <ul class="skill-tags">
+              <li>AWS</li><li>Azure</li><li>Kubernetes</li><li>Terraform</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="320">
+            <div class="skill-icon">IR</div>
+            <h3>Incident Response</h3>
+            <p>Playbook development, forensic triage, containment, and post-incident root cause analysis.</p>
+            <ul class="skill-tags">
+              <li>Volatility</li><li>EDR</li><li>SOAR</li><li>NIST</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="400">
+            <div class="skill-icon">GRC</div>
+            <h3>GRC &amp; Compliance</h3>
+            <p>ISO 27001, SOC 2, and PCI-DSS gap assessments with control mapping and audit support.</p>
+            <ul class="skill-tags">
+              <li>ISO 27001</li><li>SOC 2</li><li>PCI-DSS</li><li>NIST CSF</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 — Case Studies</span>
+          <h2 class="section-title">Selected security engagements</h2>
+        </div>
+        <div class="projects-list">
+          <article class="project-card reveal">
+            <div class="project-num">01</div>
+            <div class="project-body">
+              <h3>Enterprise SIEM Migration &amp; Detection Overhaul</h3>
+              <p>Migrated 200+ data sources to Elastic SIEM, rebuilt detection logic using MITRE ATT&amp;CK, and cut false positives by 62% within 90 days.</p>
+              <ul class="project-tags">
+                <li>Elastic</li><li>Detection Engineering</li><li>Threat Hunting</li>
+              </ul>
+            </div>
+          </article>
+          <article class="project-card reveal" data-delay="100">
+            <div class="project-num">02</div>
+            <div class="project-body">
+              <h3>External Penetration Test — FinTech Platform</h3>
+              <p>Full-scope authorized assessment exposing critical API auth flaws and lateral movement paths. Delivered prioritized remediation roadmap adopted within one sprint cycle.</p>
+              <ul class="project-tags">
+                <li>Web App</li><li>API Security</li><li>Reporting</li>
+              </ul>
+            </div>
+          </article>
+          <article class="project-card reveal" data-delay="200">
+            <div class="project-num">03</div>
+            <div class="project-body">
+              <h3>AWS Cloud Posture Remediation Program</h3>
+              <p>Audited 14 accounts against CIS benchmarks, automated remediation via Terraform, and implemented SCP guardrails reducing misconfiguration drift to near zero.</p>
+              <ul class="project-tags">
+                <li>AWS</li><li>CSPM</li><li>Terraform</li>
+              </ul>
+            </div>
+          </article>
+          <article class="project-card reveal" data-delay="300">
+            <div class="project-num">04</div>
+            <div class="project-body">
+              <h3>SOC Playbook &amp; IR Tabletop Program</h3>
+              <p>Authored 18 incident response playbooks, ran quarterly tabletop exercises, and integrated SOAR workflows that reduced MTTR from 4.2h to 1.1h.</p>
+              <ul class="project-tags">
+                <li>IR</li><li>SOAR</li><li>Tabletop</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section section-alt" id="certifications">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 — Certifications</span>
+          <h2 class="section-title">Validated credentials</h2>
+        </div>
+        <div class="certs-grid reveal">
+          <div class="cert-item">
+            <span class="cert-abbr">OSCP</span>
+            <span class="cert-name">Offensive Security Certified Professional</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-abbr">CISSP</span>
+            <span class="cert-name">Certified Information Systems Security Professional</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-abbr">GCIH</span>
+            <span class="cert-name">GIAC Certified Incident Handler</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-abbr">AWS</span>
+            <span class="cert-name">AWS Certified Security — Specialty</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-abbr">CEH</span>
+            <span class="cert-name">Certified Ethical Hacker</span>
+          </div>
+          <div class="cert-item">
+            <span class="cert-abbr">ISO</span>
+            <span class="cert-name">ISO 27001 Lead Implementer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">05 — Experience</span>
+          <h2 class="section-title">Career timeline</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2022">2022 — Present</time>
+              <h3>Senior Security Engineer</h3>
+              <p class="timeline-org">SecureStack Inc.</p>
+              <p>Lead SOC detection engineering, manage red-team program, and advise leadership on security strategy and budget prioritization.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="100">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2019">2019 — 2022</time>
+              <h3>Security Analyst II</h3>
+              <p class="timeline-org">CyberGuard Solutions</p>
+              <p>24/7 SOC operations, SIEM tuning, and incident response for Fortune 500 clients across finance and healthcare verticals.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="200">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2016">2016 — 2019</time>
+              <h3>Junior Penetration Tester</h3>
+              <p class="timeline-org">Offensive Labs</p>
+              <p>Conducted web and network penetration tests, authored technical reports, and supported OSCP training cohorts.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">06 — Contact</span>
+          <h2 class="section-title">Let's strengthen your security posture.</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p>Available for full-time roles, contract engagements, and security advisory. Response within 48 hours.</p>
+            <ul class="contact-links">
+              <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+              <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </div>
+          <form class="contact-form reveal" data-delay="100" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+              <span class="form-error" data-for="name"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+              <span class="form-error" data-for="email"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+              <span class="form-error" data-for="subject"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="form-error" data-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-success" id="formSuccess" hidden>Message sent successfully. I'll be in touch soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="brand brand-sm">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 2L4 8v8c0 7.2 5.1 13.9 12 15 6.9-1.1 12-7.8 12-15V8L16 2z" stroke="currentColor" stroke-width="1.5"/><path d="M12 16l3 3 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </span>
+        <span class="brand-text">Cyber Ice</span>
+      </a>
+      <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
