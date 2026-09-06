@@ -43,6 +43,7 @@
 html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
@@ -156,6 +157,7 @@ textarea {
 
 .site-header.scrolled {
     background: rgba(243, 246, 248, 0.88);
+    -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     box-shadow: 0 1px 0 var(--border);
 }
@@ -1219,6 +1221,7 @@ textarea {
         align-items: stretch;
         padding: 1.5rem;
         background: rgba(243, 246, 248, 0.97);
+        -webkit-backdrop-filter: blur(16px);
         backdrop-filter: blur(16px);
         transform: translateY(-110%);
         opacity: 0;
