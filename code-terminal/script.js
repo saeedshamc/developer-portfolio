@@ -810,17 +810,47 @@ document.documentElement.classList.add(
 );
 
 /* Show initials when avatar image is missing */
-$$(".portrait-photo, .profile-photo, .github-avatar img").forEach((img) => {
-    img.addEventListener("error", () => {
+function handleOwnerPhoto(img) {
+    const fallback = img.parentElement.querySelector(
+        ".portrait-fallback, .avatar-fallback"
+    );
+
+    const showFallback = () => {
+        img.classList.remove("loaded");
         img.style.display = "none";
-        const fallback = img.parentElement.querySelector(
-            ".portrait-fallback, .avatar-fallback"
-        );
         if (fallback) {
             fallback.style.display = "grid";
         }
+    };
+
+    const showPhoto = () => {
+        img.classList.add("loaded");
+        img.style.display = "";
+        if (fallback) {
+            fallback.style.display = "none";
+        }
+    };
+
+    img.addEventListener("load", () => {
+        if (img.naturalWidth > 0) {
+            showPhoto();
+        } else {
+            showFallback();
+        }
     });
-});
+
+    img.addEventListener("error", showFallback);
+
+    if (img.complete) {
+        if (img.naturalWidth > 0) {
+            showPhoto();
+        } else {
+            showFallback();
+        }
+    }
+}
+
+$$(".portrait-photo, .profile-photo").forEach(handleOwnerPhoto);
 
 console.log(
     "%c// Code Terminal portfolio initialized",
