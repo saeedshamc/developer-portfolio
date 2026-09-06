@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="QA Forge — QA Engineer &amp; Test Automation portfolio. End-to-end testing, CI pipelines, and quality frameworks.">
+  <meta name="theme-color" content="#0f1419">
+  <title>QA Forge | QA Engineer &amp; Test Automation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="qa-bg" aria-hidden="true">
+    <div class="qa-grid"></div>
+    <div class="qa-glow"></div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="brand">
+        <span class="brand-mark" aria-hidden="true">QF</span>
+        <span class="brand-name">QA Forge</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#stack">Testing Stack</a></li>
+        <li><a href="#projects">Test Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <div class="hero-status-row">
+            <span class="hero-badge">QA Engineer · SDET</span>
+            <span class="hero-pipeline"><span class="pipeline-dot"></span>All tests passing</span>
+          </div>
+          <h1 class="hero-title">Forging quality into every release — before users find the gaps.</h1>
+          <p class="hero-desc">I build test automation frameworks, CI pipelines, and quality strategies that catch regressions early and keep teams shipping with confidence.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Test Projects</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+          <dl class="hero-stats">
+            <div>
+              <dt>2,400+</dt>
+              <dd>Automated test cases</dd>
+            </div>
+            <div>
+              <dt>98%</dt>
+              <dd>Regression coverage</dd>
+            </div>
+            <div>
+              <dt>&lt;12m</dt>
+              <dd>Mean time to detect</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero-visual reveal" data-delay="120">
+          <div class="hero-frame">
+            <div class="frame-corner frame-corner--tl"></div>
+            <div class="frame-corner frame-corner--br"></div>
+            <div class="avatar-wrap">
+              <img src="assets/avatar.jpg" alt="Your Name" class="avatar-img" id="heroAvatar" data-fallback="QF">
+              <div class="avatar-fallback" id="heroAvatarFallback" hidden>QF</div>
+            </div>
+            <div class="hero-meta">
+              <span class="meta-name">Your Name</span>
+              <span class="meta-role">Senior QA Engineer</span>
+              <span class="meta-stack">Playwright · Cypress · CI/CD</span>
+            </div>
+            <div class="hero-test-bar" aria-hidden="true">
+              <span class="test-pass">✓ unit</span>
+              <span class="test-pass">✓ e2e</span>
+              <span class="test-pass">✓ api</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 — About</span>
+          <h2 class="section-title">Quality is a system, not a checkpoint.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm <strong>Your Name</strong>, a QA engineer and SDET with 7+ years building test automation at scale. I bridge manual exploration and automated guardrails — so teams move fast without trading reliability for speed.</p>
+            <p>From flaky-test triage to full CI integration, I design frameworks that developers actually use. My focus: maintainable selectors, parallel execution, and reports that tell engineers exactly what broke and why.</p>
+            <ul class="about-stats">
+              <li><span class="stat-num">15+</span><span class="stat-label">Frameworks built</span></li>
+              <li><span class="stat-num">6</span><span class="stat-label">Product squads supported</span></li>
+              <li><span class="stat-num">40%</span><span class="stat-label">Faster release cycles</span></li>
+            </ul>
+          </div>
+          <div class="about-panel reveal" data-delay="100">
+            <div class="panel-header">
+              <span class="panel-dot panel-dot--pass"></span>
+              <span>test.config.yml</span>
+            </div>
+            <pre class="panel-code"><code>runner: playwright
+parallel: 8
+retries: 2
+reporters:
+  - html
+  - junit
+coverage:
+  threshold: 85%
+status: <span class="code-pass">PASS</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testing Stack -->
+    <section class="section section-alt" id="stack">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 — Testing Stack</span>
+          <h2 class="section-title">Tools across the quality layer.</h2>
+        </div>
+        <div class="stack-grid">
+          <article class="stack-card reveal">
+            <div class="stack-icon">PW</div>
+            <h3>Playwright</h3>
+            <p>Cross-browser E2E suites with auto-waiting, trace viewer debugging, and sharded CI runs for sub-10-minute feedback loops.</p>
+            <ul class="stack-tags"><li>Chromium</li><li>Firefox</li><li>WebKit</li></ul>
+          </article>
+          <article class="stack-card reveal" data-delay="60">
+            <div class="stack-icon">CY</div>
+            <h3>Cypress</h3>
+            <p>Component and integration tests with time-travel debugging, custom commands, and visual regression snapshots.</p>
+            <ul class="stack-tags"><li>Component</li><li>API</li><li>Visual</li></ul>
+          </article>
+          <article class="stack-card reveal" data-delay="120">
+            <div class="stack-icon">SL</div>
+            <h3>Selenium</h3>
+            <p>Legacy and enterprise web apps — Page Object Model, Grid distribution, and stable locator strategies at scale.</p>
+            <ul class="stack-tags"><li>Java</li><li>Python</li><li>Grid</li></ul>
+          </article>
+          <article class="stack-card reveal" data-delay="180">
+            <div class="stack-icon">AP</div>
+            <h3>API Testing</h3>
+            <p>REST &amp; GraphQL contract validation, schema checks, and Newman/Postman collections wired into nightly pipelines.</p>
+            <ul class="stack-tags"><li>Postman</li><li>REST Assured</li><li>Supertest</li></ul>
+          </article>
+          <article class="stack-card reveal" data-delay="240">
+            <div class="stack-icon">UT</div>
+            <h3>Unit &amp; Integration</h3>
+            <p>Jest, pytest, and JUnit suites with mocking strategies, coverage gates, and mutation testing where it matters.</p>
+            <ul class="stack-tags"><li>Jest</li><li>pytest</li><li>JUnit</li></ul>
+          </article>
+          <article class="stack-card reveal" data-delay="300">
+            <div class="stack-icon">CI</div>
+            <h3>CI/CD &amp; Reporting</h3>
+            <p>GitHub Actions, Jenkins, and Azure DevOps pipelines with Allure reports, Slack alerts, and flaky-test quarantine.</p>
+            <ul class="stack-tags"><li>GitHub Actions</li><li>Allure</li><li>Docker</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Test Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 — Test Projects</span>
+          <h2 class="section-title">Selected automation work.</h2>
+        </div>
+        <div class="projects-list">
+          <article class="project-card reveal">
+            <div class="project-status"><span class="status-badge status-badge--pass">PASS</span> E2E Suite</div>
+            <h3>Playwright Framework — SaaS Platform</h3>
+            <p>Built a Page Object + fixture framework covering 340 E2E scenarios across 3 browsers. Cut regression time from 6 hours to 18 minutes via parallel sharding.</p>
+            <ul class="project-tags"><li>Playwright</li><li>TypeScript</li><li>GitHub Actions</li><li>Allure</li></ul>
+          </article>
+          <article class="project-card reveal" data-delay="80">
+            <div class="project-status"><span class="status-badge status-badge--pass">PASS</span> API Suite</div>
+            <h3>Contract Testing Pipeline</h3>
+            <p>Postman + Newman collections with schema validation and environment-driven data setup. Integrated into PR checks — blocking merges on breaking API changes.</p>
+            <ul class="project-tags"><li>Postman</li><li>Newman</li><li>OpenAPI</li></ul>
+          </article>
+          <article class="project-card reveal" data-delay="160">
+            <div class="project-status"><span class="status-badge status-badge--pass">PASS</span> Mobile</div>
+            <h3>Mobile App Automation — Appium</h3>
+            <p>Cross-platform iOS/Android regression suite with device farm integration. Reduced manual smoke testing from 4 hours to fully automated nightly runs.</p>
+            <ul class="project-tags"><li>Appium</li><li>BrowserStack</li><li>Python</li></ul>
+          </article>
+          <article class="project-card reveal" data-delay="240">
+            <div class="project-status"><span class="status-badge status-badge--pass">PASS</span> Performance</div>
+            <h3>Load &amp; Performance Baseline</h3>
+            <p>k6 scripts modeling peak traffic patterns with SLA thresholds. Automated performance gates in staging before every production deploy.</p>
+            <ul class="project-tags"><li>k6</li><li>Grafana</li><li>CI Gates</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 — Experience</span>
+          <h2 class="section-title">Career timeline.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2021">2021 — Present</time>
+              <h3>Senior QA Engineer / SDET</h3>
+              <p class="timeline-org">ReliaSoft Systems</p>
+              <p>Own test automation strategy for 4 product teams. Built Playwright framework adopted company-wide; reduced production defects by 55% year-over-year.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="100">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2018">2018 — 2021</time>
+              <h3>QA Automation Engineer</h3>
+              <p class="timeline-org">FlowStack Digital</p>
+              <p>Introduced Cypress component tests and API contract checks. Migrated 200+ Selenium tests to Playwright with zero coverage loss.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="200">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2016">2016 — 2018</time>
+              <h3>QA Analyst</h3>
+              <p class="timeline-org">TestBridge Inc.</p>
+              <p>Manual and exploratory testing for fintech products. Authored first automated smoke suite in Selenium — foundation for the team's SDET transition.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">05 — Contact</span>
+          <h2 class="section-title">Let's build quality that scales with your product.</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p>Available for full-time QA/SDET roles, test automation consulting, and framework audits. Typical response within 48 hours.</p>
+            <ul class="contact-links">
+              <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+              <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+          </div>
+          <form class="contact-form reveal" data-delay="100" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+              <span class="form-error" data-for="name"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+              <span class="form-error" data-for="email"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+              <span class="form-error" data-for="subject"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="form-error" data-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-success" id="formSuccess" hidden>Message sent successfully. I&apos;ll be in touch soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="brand brand-sm">
+        <span class="brand-mark" aria-hidden="true">QF</span>
+        <span class="brand-name">QA Forge</span>
+      </a>
+      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
