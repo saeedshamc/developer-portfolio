@@ -45,7 +45,9 @@
     });
 
     window.addEventListener('scroll', function () {
-      header.classList.toggle('scrolled', window.scrollY > 40);
+      if (header) {
+        header.classList.toggle('scrolled', window.scrollY > 40);
+      }
     }, { passive: true });
   }
 

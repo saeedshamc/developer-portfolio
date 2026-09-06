@@ -289,6 +289,10 @@ button, input, textarea { font: inherit; color: inherit; }
   letter-spacing: -0.05em;
 }
 
+.avatar-fallback[hidden] {
+  display: none !important;
+}
+
 .hero-meta {
   margin-top: 1.25rem;
   display: flex;
