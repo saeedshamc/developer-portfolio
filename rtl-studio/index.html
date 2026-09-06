@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RTL Studio — پورتفولیوی دوزبانه توسعه‌دهنده. مهندسی فول‌استک با طراحی FA/EN و RTL.">
+  <meta name="theme-color" content="#0f172a">
+  <title>RTL Studio | پورتفولیوی توسعه‌دهنده</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=Vazirmatn:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true">
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+    <div class="grid-lines"></div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#hero" class="brand">
+        <span class="brand-mark">RS</span>
+        <span class="brand-name">RTL<span class="brand-dot">.</span>Studio</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n="nav.about">درباره</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">مهارت‌ها</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">پروژه‌ها</a></li>
+        <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">تماس</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button type="button" class="lang-toggle" id="langToggle" aria-label="تغییر زبان">
+          <span class="lang-opt" data-lang-opt="fa">فا</span>
+          <span class="lang-sep" aria-hidden="true">/</span>
+          <span class="lang-opt" data-lang-opt="en">EN</span>
+        </button>
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="باز و بسته کردن منو" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-brand reveal">
+          <span class="hero-brand-mark">RS</span>
+          <span class="hero-brand-text">RTL<span>.</span>Studio</span>
+        </div>
+        <div class="hero-composition">
+          <div class="hero-photo reveal" data-delay="80">
+            <div class="photo-ring"></div>
+            <div class="photo-frame">
+              <img src="assets/avatar.jpg" alt="عکس پروفایل" class="avatar-img" id="heroAvatar" data-fallback="RS">
+              <div class="avatar-fallback" id="heroAvatarFallback" hidden>RS</div>
+            </div>
+            <div class="photo-pulse" aria-hidden="true"></div>
+          </div>
+          <div class="hero-copy reveal" data-delay="160">
+            <p class="hero-role" data-i18n="hero.role">توسعه‌دهنده فول‌استک · متخصص RTL و i18n</p>
+            <h1 class="hero-title" data-i18n="hero.title">کدی که در هر جهتی درست خوانده می‌شود.</h1>
+            <p class="hero-desc" data-i18n="hero.desc">محصولات وب دوزبانه با چیدمان RTL دقیق، رابط کاربری در دسترس و معماری فول‌استک آماده تولید می‌سازم.</p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaProjects">مشاهده پروژه‌ها</a>
+              <a href="#contact" class="btn btn-ghost" data-i18n="hero.ctaContact">ارتباط با من</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-i18n="about.tag">۰۱ — درباره</span>
+          <h2 class="section-title" data-i18n="about.title">پل زدن میان زبان، چیدمان و منطق.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p data-i18n="about.p1">من یک توسعه‌دهنده فول‌استک با بیش از ۶ سال تجربه در ساخت اپلیکیشن‌های وب برای مخاطبان فارسی و انگلیسی هستم. به ریتم تایپوگرافی، CSS دو‌جهته و APIهای مقیاس‌پذیر اهمیت می‌دهم.</p>
+            <p data-i18n="about.p2">از داشبوردهای SaaS تا جریان‌های فروشگاهی، React، Node.js و i18n آگاهانه را ترکیب می‌کنم تا هر زبان بومی احساس شود — نه ترجمه‌ای پس از فکر.</p>
+          </div>
+          <aside class="about-aside reveal" data-delay="100">
+            <ul class="about-list">
+              <li>
+                <span class="about-label" data-i18n="about.labelFocus">تمرکز</span>
+                <span data-i18n="about.valueFocus">رابط RTL و محصولات دوزبانه</span>
+              </li>
+              <li>
+                <span class="about-label" data-i18n="about.labelStack">فناوری</span>
+                <span data-i18n="about.valueStack">React · Node.js · TypeScript · PostgreSQL</span>
+              </li>
+              <li>
+                <span class="about-label" data-i18n="about.labelBase">موقعیت</span>
+                <span data-i18n="about.valueBase">تهران · دورکاری جهانی</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-i18n="skills.tag">۰۲ — مهارت‌ها</span>
+          <h2 class="section-title" data-i18n="skills.title">مهارت فول‌استک با توجه به زبان.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-num">01</div>
+            <h3 data-i18n="skills.c1.title">فرانت‌اند و RTL</h3>
+            <p data-i18n="skills.c1.desc">سیستم کامپوننت، ویژگی‌های منطقی CSS و چیدمان‌های آگاه به زبان که بین LTR و RTL به‌درستی جابه‌جا می‌شوند.</p>
+            <ul class="skill-tags">
+              <li>React</li><li>Next.js</li><li>TypeScript</li><li>Node.js</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="80">
+            <div class="skill-num">02</div>
+            <h3 data-i18n="skills.c2.title">i18n و طراحی</h3>
+            <p data-i18n="skills.c2.desc">جریان ترجمه، جفت‌سازی فونت و الگوهای UI که به خط فارسی و تایپوگرافی لاتین احترام می‌گذارند.</p>
+            <ul class="skill-tags">
+              <li>CSS</li><li>Tailwind</li><li>RTL</li><li>i18n</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="160">
+            <div class="skill-num">03</div>
+            <h3 data-i18n="skills.c3.title">بک‌اند و DevOps</h3>
+            <p data-i18n="skills.c3.desc">APIهای REST و GraphQL، طراحی پایگاه داده، کش و استقرار کانتینری روی زیرساخت ابری.</p>
+            <ul class="skill-tags">
+              <li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>AWS</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag" data-i18n="projects.tag">۰۳ — پروژه‌ها</span>
+          <h2 class="section-title" data-i18n="projects.title">نمونه کارها در زبان‌های مختلف.</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-header">
+              <span class="project-num">01</span>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer">GH</a>
+                <a href="#" aria-label="Live demo" target="_blank" rel="noopener noreferrer">Demo</a>
+              </div>
+            </div>
+            <h3 data-i18n="projects.p1.title">نوا کامرس</h3>
+            <p data-i18n="projects.p1.desc">پلتفرم فروشگاهی دوزبانه با پرداخت RTL، پشتیبانی چندارزی و پنل مدیریت FA/EN.</p>
+            <ul class="project-tags">
+              <li>React</li><li>Node.js</li><li>PostgreSQL</li>
+            </ul>
+          </article>
+          <article class="project-card reveal" data-delay="80">
+            <div class="project-header">
+              <span class="project-num">02</span>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer">GH</a>
+                <a href="#" aria-label="Live demo" target="_blank" rel="noopener noreferrer">Demo</a>
+              </div>
+            </div>
+            <h3 data-i18n="projects.p2.title">DirFlow CMS</h3>
+            <p data-i18n="projects.p2.desc">CMS بدون سر با تشخیص خودکار جهت، نسخه‌بندی محتوا و صورتحساب Stripe برای تیم‌های SaaS.</p>
+            <ul class="project-tags">
+              <li>Next.js</li><li>RTL</li><li>Stripe</li>
+            </ul>
+          </article>
+          <article class="project-card reveal" data-delay="160">
+            <div class="project-header">
+              <span class="project-num">03</span>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer">GH</a>
+                <a href="#" aria-label="Live demo" target="_blank" rel="noopener noreferrer">Demo</a>
+              </div>
+            </div>
+            <h3 data-i18n="projects.p3.title">SignalBoard</h3>
+            <p data-i18n="projects.p3.desc">داشبورد تحلیل بلادرنگ با فرمت تاریخ شمسی، فید WebSocket و نمودارهای RTL واکنش‌گرا.</p>
+            <ul class="project-tags">
+              <li>Vue 3</li><li>WebSocket</li><li>D3.js</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="section-tag" data-i18n="contact.tag">۰۴ — تماس</span>
+            <h2 class="section-title" data-i18n="contact.title">بیایید چیزی دوزبانه بسازیم.</h2>
+            <p data-i18n="contact.desc">آماده همکاری در نقش‌های فول‌استک، مشاوره RTL/i18n و محصولاتی که بازار فارسی‌زبان را هدف می‌گیرند.</p>
+            <ul class="contact-links">
+              <li><a href="mailto:hello@rtlstudio.dev">hello@rtlstudio.dev</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://t.me" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+            </ul>
+          </div>
+          <form class="contact-form reveal" data-delay="100" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" data-i18n="form.nameLabel">نام</label>
+              <input type="text" id="name" name="name" autocomplete="name" required placeholder="نام شما" data-i18n-placeholder="form.namePlaceholder">
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="form.emailLabel">ایمیل</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com" data-i18n-placeholder="form.emailPlaceholder">
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="form.messageLabel">پیام</label>
+              <textarea id="message" name="message" rows="4" required placeholder="درباره پروژه خود بنویسید…" data-i18n-placeholder="form.messagePlaceholder"></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" data-i18n="form.submit">ارسال پیام</button>
+            <p class="form-success" id="formSuccess" hidden data-i18n="form.success">پیام ارسال شد — به‌زودی پاسخ می‌دهم.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="brand brand-sm">
+        <span class="brand-mark">RS</span>
+        <span class="brand-name">RTL<span class="brand-dot">.</span>Studio</span>
+      </a>
+      <p>&copy; <span id="year"></span> <span data-i18n="footer.rights">RTL Studio. با دقت ساخته شده.</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
