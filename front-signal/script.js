@@ -7,6 +7,7 @@ const $$ = (sel, parent = document) => [...parent.querySelectorAll(sel)];
 const header = $("#header");
 
 function handleScroll() {
+  if (!header) return;
   header.classList.toggle("scrolled", window.scrollY > 20);
 }
 
@@ -162,4 +163,7 @@ form.addEventListener("submit", (e) => {
 });
 
 /* Footer year */
-$("#year").textContent = new Date().getFullYear();
+const yearEl = $("#year");
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
