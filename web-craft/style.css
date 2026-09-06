@@ -48,6 +48,7 @@
 html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
@@ -110,6 +111,7 @@ em {
         linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
     background-size: 64px 64px;
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 20%, transparent 70%);
     mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 20%, transparent 70%);
 }
 
@@ -211,6 +213,7 @@ em {
 
 .site-header.scrolled {
     background: rgba(17, 17, 17, 0.88);
+    -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
 }
@@ -699,6 +702,7 @@ em {
     background: rgba(17, 17, 17, 0.75);
     padding: 0.4rem 0.75rem;
     border-radius: var(--radius-sm);
+    -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
 }
 
@@ -1023,6 +1027,7 @@ em {
         gap: 0;
         padding: 1.5rem;
         background: rgba(17, 17, 17, 0.97);
+        -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
         border-top: 1px solid var(--border);
         transform: translateX(100%);
