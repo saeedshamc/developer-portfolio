@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Front Noir — Frontend &amp; UI Engineer portfolio. React, Vue, CSS craft, and interface-first design in deep cinema noir.">
+  <meta name="theme-color" content="#0a0a0b">
+  <title>Front Noir | Frontend &amp; UI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true">
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+    <div class="grain"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="brand">
+        <span class="brand-mark">FN</span>
+        <span class="brand-name">noir<span class="brand-dot">.</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">UI Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-composition">
+          <div class="hero-photo reveal">
+            <div class="photo-cinema-bar photo-cinema-bar--top" aria-hidden="true"></div>
+            <div class="photo-frame">
+              <img src="assets/avatar.jpg" alt="Your Name" class="avatar-img" id="heroAvatar" data-fallback="FN">
+              <div class="avatar-fallback" id="heroAvatarFallback" hidden>FN</div>
+              <div class="photo-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="photo-cinema-bar photo-cinema-bar--bottom" aria-hidden="true"></div>
+            <div class="photo-accent" aria-hidden="true"></div>
+          </div>
+          <div class="hero-copy reveal" data-delay="120">
+            <div class="hero-brand">
+              <span class="hero-brand-mark">FN</span>
+              <span class="hero-brand-text">noir<span>.</span></span>
+            </div>
+            <p class="hero-role">Frontend Engineer · UI Engineer</p>
+            <h1 class="hero-title">Interfaces in shadow &amp; light.</h1>
+            <p class="hero-desc">I craft motion-aware, accessible frontends — React, Vue, and CSS systems that translate design intent into shipped product with cinematic precision.</p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-ghost">Start a Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 — About</span>
+          <h2 class="section-title">Building surfaces that hold attention in the dark.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm <strong>Your Name</strong>, a frontend and UI engineer with 6+ years turning design systems into production-grade interfaces. I care about the micro-decisions — spacing rhythm, motion timing, focus states — that make software feel considered.</p>
+            <p>From component libraries to full product surfaces, I bridge design and engineering with React, Vue, TypeScript, and CSS that scales without losing character.</p>
+          </div>
+          <div class="about-aside reveal" data-delay="100">
+            <ul class="about-list">
+              <li><span class="about-label">Focus</span>Design systems &amp; UI architecture</li>
+              <li><span class="about-label">Stack</span>React · Vue · TypeScript · CSS</li>
+              <li><span class="about-label">Based</span>Remote · Open to relocation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UI Skills -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 — UI Skills</span>
+          <h2 class="section-title">Craft across the interface stack.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-num">01</div>
+            <h3>Component Architecture</h3>
+            <p>Composable React &amp; Vue patterns, headless primitives, and token-driven APIs that designers and engineers both love.</p>
+            <ul class="skill-tags">
+              <li>React</li><li>Vue 3</li><li>Storybook</li><li>Radix</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="80">
+            <div class="skill-num">02</div>
+            <h3>CSS &amp; Motion</h3>
+            <p>Layout systems, container queries, view transitions, and motion that guides — never distracts.</p>
+            <ul class="skill-tags">
+              <li>CSS Grid</li><li>Animations</li><li>Tailwind</li><li>PostCSS</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="160">
+            <div class="skill-num">03</div>
+            <h3>Design Systems</h3>
+            <p>Token pipelines, Figma-to-code workflows, and documentation that keeps teams aligned at scale.</p>
+            <ul class="skill-tags">
+              <li>Figma</li><li>Tokens</li><li>Theming</li><li>a11y</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="240">
+            <div class="skill-num">04</div>
+            <h3>Performance &amp; DX</h3>
+            <p>Bundle-aware builds, lazy hydration, and tooling that makes shipping polished UI fast and repeatable.</p>
+            <ul class="skill-tags">
+              <li>Vite</li><li>Next.js</li><li>Lighthouse</li><li>Testing</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 — Projects</span>
+          <h2 class="section-title">Work where craft meets constraint.</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-preview">
+              <div class="project-mock">
+                <span class="mock-bar"></span>
+                <span class="mock-block"></span>
+                <span class="mock-block short"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-type">Design System</span>
+              <h3>Atlas UI Kit</h3>
+              <p>40+ accessible components, dark/light theming, and Figma parity for a Series B fintech product.</p>
+              <div class="project-meta">
+                <span>React</span><span>Storybook</span><span>WCAG 2.2</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal" data-delay="100">
+            <div class="project-preview preview-b">
+              <div class="project-mock">
+                <span class="mock-circle"></span>
+                <span class="mock-block"></span>
+                <span class="mock-block short"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-type">Product Surface</span>
+              <h3>Flow Dashboard</h3>
+              <p>Real-time analytics dashboard with skeleton states, optimistic updates, and responsive data viz.</p>
+              <div class="project-meta">
+                <span>Vue 3</span><span>D3</span><span>WebSockets</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal" data-delay="200">
+            <div class="project-preview preview-c">
+              <div class="project-mock">
+                <span class="mock-bar wide"></span>
+                <span class="mock-grid"></span>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-type">Marketing Site</span>
+              <h3>Noir Landing</h3>
+              <p>Scroll-driven narrative site with reduced-motion fallbacks and sub-1s LCP on mobile.</p>
+              <div class="project-meta">
+                <span>Next.js</span><span>GSAP</span><span>Edge CDN</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 — Experience</span>
+          <h2 class="section-title">Roles shaped by interface craft.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2022 — Present</span>
+              <h3>Senior Frontend Engineer</h3>
+              <p class="timeline-company">Atlas Fintech</p>
+              <p>Led design system adoption across 3 product squads. Reduced UI regression bugs by 60% through visual testing and component contracts.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="80">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2019 — 2022</span>
+              <h3>UI Engineer</h3>
+              <p class="timeline-company">Flow Analytics</p>
+              <p>Built the core dashboard shell in Vue 3, established CSS architecture, and partnered with design on motion guidelines.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="160">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2017 — 2019</span>
+              <h3>Frontend Developer</h3>
+              <p class="timeline-company">Studio Meridian</p>
+              <p>Shipped marketing sites and e-commerce frontends for agency clients with a focus on performance and accessibility.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="section-tag">05 — Contact</span>
+            <h2 class="section-title">Let's build something sharp.</h2>
+            <p>Open to frontend leadership roles, design system contracts, and interface-heavy product work.</p>
+            <ul class="contact-links">
+              <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble</a></li>
+            </ul>
+          </div>
+          <form class="contact-form reveal" data-delay="100" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your name">
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com">
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Tell me about your project…"></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-success" id="formSuccess" hidden>Message sent — I'll get back to you soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="brand brand-sm">
+        <span class="brand-mark">FN</span>
+        <span class="brand-name">noir<span class="brand-dot">.</span></span>
+      </a>
+      <p>&copy; <span id="year"></span> Your Name. Crafted with intent.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
