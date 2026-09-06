@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DB Core — Database Engineer portfolio. Schema design, query optimization, replication, and data platform engineering.">
+  <meta name="theme-color" content="#0a1210">
+  <title>DB Core | Database Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="db-bg" aria-hidden="true">
+    <div class="db-grid"></div>
+    <div class="db-glow"></div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="brand">
+        <span class="brand-mark">DB</span>
+        <span class="brand-name">DB Core</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#stack">Database Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <div class="hero-brand-row">
+            <span class="hero-badge">Database Engineer</span>
+            <span class="hero-status"><span class="status-dot"></span>Replica sync healthy</span>
+          </div>
+          <h1 class="hero-title">Designing data layers that stay fast, consistent, and recoverable at scale.</h1>
+          <p class="hero-desc">I architect and operate production databases — schema design, query tuning, replication, backups &amp; disaster recovery — so applications never outrun their data foundation.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Database Projects</a>
+            <a href="#contact" class="btn btn-outline">Start a Conversation</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" data-delay="120">
+          <div class="hero-frame">
+            <div class="frame-edge frame-edge--top"></div>
+            <div class="frame-edge frame-edge--bottom"></div>
+            <div class="avatar-wrap">
+              <img src="assets/avatar.jpg" alt="Your Name" class="avatar-img" data-fallback="DB">
+              <div class="avatar-fallback" hidden>DB</div>
+            </div>
+            <div class="hero-meta">
+              <span class="meta-name">Your Name</span>
+              <span class="meta-role">Senior Database Engineer</span>
+              <span class="meta-stack">PostgreSQL · MySQL · Redis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 — About</span>
+          <h2 class="section-title">Data integrity first — performance without compromise.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm <strong>Your Name</strong>, a database engineer with 8+ years keeping mission-critical data systems reliable under load. I treat every schema change, index, and failover plan as a production contract.</p>
+            <p>From OLTP tuning to warehouse pipelines, I work across relational engines, caches, and observability — design, migration, on-call, and the runbooks that keep recovery predictable.</p>
+            <ul class="about-stats">
+              <li><span class="stat-num">40TB+</span><span class="stat-label">Managed database footprint</span></li>
+              <li><span class="stat-num">99.99%</span><span class="stat-label">Uptime on owned clusters</span></li>
+              <li><span class="stat-num">200+</span><span class="stat-label">Queries optimized per year</span></li>
+            </ul>
+          </div>
+          <div class="about-panel reveal" data-delay="100">
+            <div class="panel-header">
+              <span class="panel-dot"></span>
+              <span>profile.sql</span>
+            </div>
+            <pre class="panel-code"><code>SELECT role, focus, location
+FROM dba_profile
+WHERE available = true;
+
+-- role:     'Database Engineer'
+-- focus:    ['Schema', 'Tuning', 'DR']
+-- location: 'Your City'</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Database Stack -->
+    <section class="section section-alt" id="stack">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 — Database Stack</span>
+          <h2 class="section-title">Engines, caches, and tooling across the data layer.</h2>
+        </div>
+        <div class="stack-grid">
+          <article class="stack-card reveal">
+            <div class="stack-icon">PG</div>
+            <h3>PostgreSQL</h3>
+            <p>Schema design, partitioning, logical replication, pgBouncer pooling, and vacuum strategy for high-write OLTP workloads.</p>
+            <ul class="stack-tags"><li>Replication</li><li>Partitioning</li><li>Extensions</li></ul>
+          </article>
+          <article class="stack-card reveal" data-delay="60">
+            <div class="stack-icon">MY</div>
+            <h3>MySQL / MariaDB</h3>
+            <p>InnoDB tuning, Galera clusters, slow-query analysis, and zero-downtime migrations for legacy and greenfield apps.</p>
+            <ul class="stack-tags"><li>InnoDB</li><li>Galera</li><li>Percona</li></ul>
+          </article>
+          <article class="stack-card reveal" data-delay="120">
+            <div class="stack-icon">RD</div>
+            <h3>Redis</h3>
+            <p>Cache layers, session stores, sorted-set leaderboards, and Sentinel failover for sub-millisecond read paths.</p>
+            <ul class="stack-tags"><li>Cluster</li><li>Sentinel</li><li>Cache</li></ul>
+          </article>
+          <article class="stack-card reveal" data-delay="180">
+            <div class="stack-icon">MG</div>
+            <h3>MongoDB</h3>
+            <p>Document modeling, sharded clusters, aggregation pipelines, and change streams for event-driven architectures.</p>
+            <ul class="stack-tags"><li>Sharding</li><li>Atlas</li><li>Aggregation</li></ul>
+          </article>
+          <article class="stack-card reveal" data-delay="240">
+            <div class="stack-icon">WH</div>
+            <h3>Data Warehousing</h3>
+            <p>Snowflake, BigQuery, and Redshift — ELT pipelines, star schemas, and cost-aware query governance.</p>
+            <ul class="stack-tags"><li>Snowflake</li><li>dbt</li><li>ETL</li></ul>
+          </article>
+          <article class="stack-card reveal" data-delay="300">
+            <div class="stack-icon">OP</div>
+            <h3>Ops &amp; Observability</h3>
+            <p>Prometheus exporters, Grafana dashboards, PITR backups, and automated failover drills across cloud regions.</p>
+            <ul class="stack-tags"><li>Prometheus</li><li>Vault</li><li>Terraform</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 — Projects</span>
+          <h2 class="section-title">Selected database engineering work.</h2>
+        </div>
+        <div class="projects-list">
+          <article class="project-card reveal">
+            <div class="project-prefix">CREATE INDEX CONCURRENTLY</div>
+            <h3>PostgreSQL Partition Migration — FinTech Ledger</h3>
+            <p>Migrated 12TB ledger table to monthly partitions with zero downtime, cutting p99 read latency from 890ms to 42ms and enabling parallel vacuum.</p>
+            <ul class="project-tags"><li>PostgreSQL</li><li>Partitioning</li><li>pg_repack</li><li>AWS RDS</li></ul>
+          </article>
+          <article class="project-card reveal" data-delay="80">
+            <div class="project-prefix">ALTER TABLE … ADD REPLICA</div>
+            <h3>Cross-Region Replication Platform</h3>
+            <p>Built logical replication between US and EU PostgreSQL clusters with conflict resolution, lag alerting, and automated switchover runbooks.</p>
+            <ul class="project-tags"><li>Logical Replication</li><li>Patroni</li><li>HAProxy</li></ul>
+          </article>
+          <article class="project-card reveal" data-delay="160">
+            <div class="project-prefix">EXPLAIN ANALYZE</div>
+            <h3>Query Optimization Program — E-Commerce</h3>
+            <p>Audited 400+ slow queries across MySQL replicas; index redesign and query rewrites reduced database CPU by 58% during peak traffic.</p>
+            <ul class="project-tags"><li>MySQL</li><li>Query Tuning</li><li>Percona Toolkit</li></ul>
+          </article>
+          <article class="project-card reveal" data-delay="240">
+            <div class="project-prefix">BACKUP … RESTORE VERIFY</div>
+            <h3>Disaster Recovery &amp; PITR Framework</h3>
+            <p>Standardized WAL archiving, encrypted backups, and quarterly restore drills across 18 production databases with RPO under 5 minutes.</p>
+            <ul class="project-tags"><li>PITR</li><li>WAL-G</li><li>Runbooks</li><li>Compliance</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 — Experience</span>
+          <h2 class="section-title">Career timeline.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2020">2020 — Present</time>
+              <h3>Senior Database Engineer</h3>
+              <p class="timeline-org">DataVault Systems</p>
+              <p>Own PostgreSQL and Redis platform serving 40TB+ across 6 regions. Led partition migration, established DBA standards, and reduced incident MTTR by 65%.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="100">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2017">2017 — 2020</time>
+              <h3>Database Administrator</h3>
+              <p class="timeline-org">ScalePoint Analytics</p>
+              <p>Managed MySQL Galera clusters and Snowflake warehouse. Built automated backup verification and slow-query review pipeline used by 12 product teams.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="200">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2015">2015 — 2017</time>
+              <h3>Junior DBA</h3>
+              <p class="timeline-org">CoreLedger Inc.</p>
+              <p>Supported Oracle and SQL Server environments, wrote migration scripts, and maintained on-call rotation for production database incidents.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">05 — Contact</span>
+          <h2 class="section-title">Let's build a data layer that scales with confidence.</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p>Available for full-time DBA roles, database consulting, and migration projects. Typical response within 48 hours.</p>
+            <ul class="contact-links">
+              <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+              <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+          </div>
+          <form class="contact-form reveal" data-delay="100" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+              <span class="form-error" data-for="name"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+              <span class="form-error" data-for="email"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+              <span class="form-error" data-for="subject"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="form-error" data-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-success" id="formSuccess" hidden>Message sent successfully. I'll be in touch soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="brand brand-sm">
+        <span class="brand-mark">DB</span>
+        <span class="brand-name">DB Core</span>
+      </a>
+      <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
