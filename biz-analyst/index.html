@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Biz Analyst — Business &amp; Systems Analyst portfolio. Requirements engineering, process mapping, and stakeholder alignment.">
+  <title>Biz Analyst | Business &amp; Systems Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="pattern-bg" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="brand">
+        <span class="brand-mark" aria-hidden="true">BA</span>
+        <span class="brand-text">Biz Analyst</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#toolkit">Toolkit</a></li>
+        <li><a href="#cases">Case Studies</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <p class="hero-label">Business Analyst · Systems Analyst · Requirements</p>
+          <h1 class="hero-title">Turning ambiguity into actionable requirements.</h1>
+          <p class="hero-desc">I bridge stakeholders and engineering teams — translating business goals into clear specs, process models, and delivery roadmaps that reduce rework and accelerate outcomes.</p>
+          <div class="hero-cta">
+            <a href="#cases" class="btn btn-primary">View Case Studies</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" data-delay="150">
+          <div class="hero-frame">
+            <div class="hero-frame-accent"></div>
+            <div class="avatar-wrap">
+              <img src="assets/avatar.jpg" alt="Your Name" class="avatar-img" id="heroAvatar" data-fallback="BA">
+              <div class="avatar-fallback" id="heroAvatarFallback" hidden>BA</div>
+            </div>
+            <div class="hero-meta">
+              <span class="meta-tag">Your Name</span>
+              <span class="meta-role">Senior Business &amp; Systems Analyst</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 — About</span>
+          <h2 class="section-title">Clarity before code, alignment before delivery.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <img src="assets/avatar.jpg" alt="Your Name" class="avatar-img" data-fallback="BA">
+            <div class="avatar-fallback about-fallback" hidden>BA</div>
+          </div>
+          <div class="about-text reveal" data-delay="100">
+            <p>I'm <strong>Your Name</strong>, a business and systems analyst with 9+ years translating complex operations into structured requirements. I work across finance, healthcare, and SaaS — facilitating workshops, mapping AS-IS/TO-BE processes, and ensuring every sprint ships value stakeholders can measure.</p>
+            <p>My approach combines BABOK practices with agile delivery: user stories with acceptance criteria, traceability matrices, and data-driven impact analysis. I believe the best analysis is collaborative, documented, and testable from day one.</p>
+            <ul class="about-stats">
+              <li><span class="stat-num">60+</span><span class="stat-label">Projects delivered</span></li>
+              <li><span class="stat-num">35%</span><span class="stat-label">Avg. rework reduction</span></li>
+              <li><span class="stat-num">120+</span><span class="stat-label">Workshops facilitated</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Analysis Toolkit -->
+    <section class="section section-alt" id="toolkit">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 — Analysis Toolkit</span>
+          <h2 class="section-title">Methods &amp; tools I rely on</h2>
+        </div>
+        <div class="toolkit-grid">
+          <article class="toolkit-card reveal">
+            <div class="toolkit-icon">REQ</div>
+            <h3>Requirements Engineering</h3>
+            <p>Elicitation workshops, user stories, use cases, and acceptance criteria with full traceability to business objectives.</p>
+            <ul class="toolkit-tags">
+              <li>BABOK</li><li>User Stories</li><li>MoSCoW</li><li>RTM</li>
+            </ul>
+          </article>
+          <article class="toolkit-card reveal" data-delay="80">
+            <div class="toolkit-icon">BPM</div>
+            <h3>Process Modeling</h3>
+            <p>AS-IS/TO-BE mapping, swimlane diagrams, and bottleneck analysis to streamline operations and reduce handoff friction.</p>
+            <ul class="toolkit-tags">
+              <li>BPMN 2.0</li><li>Visio</li><li>Lucidchart</li><li>Signavio</li>
+            </ul>
+          </article>
+          <article class="toolkit-card reveal" data-delay="160">
+            <div class="toolkit-icon">DAT</div>
+            <h3>Data &amp; Systems Analysis</h3>
+            <p>Entity-relationship modeling, data dictionaries, API specs, and integration mapping for cross-system workflows.</p>
+            <ul class="toolkit-tags">
+              <li>SQL</li><li>ERD</li><li>Swagger</li><li>JSON Schema</li>
+            </ul>
+          </article>
+          <article class="toolkit-card reveal" data-delay="240">
+            <div class="toolkit-icon">STK</div>
+            <h3>Stakeholder Management</h3>
+            <p>RACI matrices, communication plans, and executive briefings that keep sponsors informed and teams aligned.</p>
+            <ul class="toolkit-tags">
+              <li>RACI</li><li>Power BI</li><li>Confluence</li><li>Miro</li>
+            </ul>
+          </article>
+          <article class="toolkit-card reveal" data-delay="320">
+            <div class="toolkit-icon">AGL</div>
+            <h3>Agile Delivery Support</h3>
+            <p>Backlog grooming, sprint planning facilitation, and UAT coordination to ensure shippable increments every cycle.</p>
+            <ul class="toolkit-tags">
+              <li>Scrum</li><li>Jira</li><li>Azure DevOps</li><li>UAT</li>
+            </ul>
+          </article>
+          <article class="toolkit-card reveal" data-delay="400">
+            <div class="toolkit-icon">IMP</div>
+            <h3>Impact &amp; Feasibility</h3>
+            <p>Cost-benefit analysis, ROI modeling, and risk registers that inform prioritization and investment decisions.</p>
+            <ul class="toolkit-tags">
+              <li>ROI</li><li>SWOT</li><li>Risk Matrix</li><li>Excel</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="section" id="cases">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 — Case Studies</span>
+          <h2 class="section-title">Selected analysis engagements</h2>
+        </div>
+        <div class="cases-list">
+          <article class="case-card reveal">
+            <div class="case-num">01</div>
+            <div class="case-body">
+              <h3>Claims Processing Modernization — Health Insurance</h3>
+              <p>Mapped 14 legacy workflows, facilitated 22 stakeholder sessions, and delivered a TO-BE BPMN model that cut average claim cycle time from 11 days to 4 days post-implementation.</p>
+              <ul class="case-tags">
+                <li>BPMN</li><li>Requirements</li><li>Change Management</li>
+              </ul>
+            </div>
+          </article>
+          <article class="case-card reveal" data-delay="100">
+            <div class="case-num">02</div>
+            <div class="case-body">
+              <h3>Core Banking API Integration Program</h3>
+              <p>Authored 180+ functional requirements and integration specs for a multi-vendor API layer, enabling three product teams to launch in parallel without scope drift.</p>
+              <ul class="case-tags">
+                <li>API Specs</li><li>Traceability</li><li>FinTech</li>
+              </ul>
+            </div>
+          </article>
+          <article class="case-card reveal" data-delay="200">
+            <div class="case-num">03</div>
+            <div class="case-body">
+              <h3>ERP Migration — Manufacturing Operations</h3>
+              <p>Led gap analysis between legacy ERP and SAP S/4HANA, producing a phased migration roadmap adopted by C-suite with projected 18% operational cost savings.</p>
+              <ul class="case-tags">
+                <li>Gap Analysis</li><li>SAP</li><li>ROI Modeling</li>
+              </ul>
+            </div>
+          </article>
+          <article class="case-card reveal" data-delay="300">
+            <div class="case-num">04</div>
+            <div class="case-body">
+              <h3>Customer Portal Requirements — B2B SaaS</h3>
+              <p>Defined MVP scope through MoSCoW prioritization and prototype validation with 8 pilot customers, reducing post-launch change requests by 40% compared to prior releases.</p>
+              <ul class="case-tags">
+                <li>MVP Scoping</li><li>Prototyping</li><li>UAT</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 — Experience</span>
+          <h2 class="section-title">Career timeline</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2021">2021 — Present</time>
+              <h3>Senior Business &amp; Systems Analyst</h3>
+              <p class="timeline-org">ClarityBridge Consulting</p>
+              <p>Lead requirements for enterprise transformation programs, mentor junior analysts, and advise product owners on backlog prioritization and acceptance criteria quality.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="100">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2018">2018 — 2021</time>
+              <h3>Business Analyst II</h3>
+              <p class="timeline-org">NovaFin Solutions</p>
+              <p>Owned end-to-end analysis for digital banking initiatives — process mapping, data modeling, and UAT coordination across cross-functional agile squads.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="200">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2015">2015 — 2018</time>
+              <h3>Junior Systems Analyst</h3>
+              <p class="timeline-org">Meridian Health Systems</p>
+              <p>Supported EHR integration projects, documented workflow gaps, and maintained requirements traceability matrices for regulatory audit readiness.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">05 — Contact</span>
+          <h2 class="section-title">Let's define the problem before building the solution.</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p>Available for full-time roles, contract analysis engagements, and discovery workshops. Response within 48 hours.</p>
+            <ul class="contact-links">
+              <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+              <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </div>
+          <form class="contact-form reveal" data-delay="100" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+              <span class="form-error" data-for="name"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+              <span class="form-error" data-for="email"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+              <span class="form-error" data-for="subject"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="form-error" data-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-success" id="formSuccess" hidden>Message sent successfully. I'll be in touch soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="brand brand-sm">
+        <span class="brand-mark" aria-hidden="true">BA</span>
+        <span class="brand-text">Biz Analyst</span>
+      </a>
+      <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
