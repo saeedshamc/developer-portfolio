@@ -217,8 +217,12 @@ img {
 
     background-size: 50px 50px;
 
-    mask-image:
-        linear-gradient(
+    -webkit-mask-image: linear-gradient(
+            to bottom,
+            black,
+            transparent 85%
+        );
+    mask-image: linear-gradient(
             to bottom,
             black,
             transparent 85%
@@ -293,8 +297,8 @@ img {
     background: rgba(8, 10, 13, 0.78);
     border-bottom-color: var(--border);
     box-shadow: 0 10px 40px rgba(0,0,0,0.18);
-    backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
 }
 
 .navbar {
@@ -538,8 +542,9 @@ img {
     color: transparent;
 
     background: var(--gradient-accent);
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero h2 {
@@ -795,6 +800,7 @@ img {
     font-family: var(--font-mono);
     font-size: 10px;
 
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
 
@@ -854,6 +860,7 @@ img {
         var(--shadow),
         0 0 0 1px rgba(0,255,136,0.025);
 
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
 }
 
@@ -1115,8 +1122,12 @@ img {
 
     background-size: 32px 32px;
 
-    mask-image:
-        radial-gradient(
+    -webkit-mask-image: radial-gradient(
+            circle at center,
+            black,
+            transparent 75%
+        );
+    mask-image: radial-gradient(
             circle at center,
             black,
             transparent 75%
@@ -1213,6 +1224,7 @@ img {
     font-family: var(--font-mono);
     font-size: 10px;
 
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
 
@@ -1241,6 +1253,7 @@ img {
     font-family: var(--font-mono);
     font-size: 9px;
 
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
 
@@ -2958,6 +2971,7 @@ img {
     visibility: hidden;
     transform: translateY(10px);
 
+    -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
 
     transition: var(--transition);
@@ -3172,6 +3186,7 @@ img {
 
         transition: var(--transition);
 
+        -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
     }
 
