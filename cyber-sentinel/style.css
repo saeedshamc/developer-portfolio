@@ -53,6 +53,7 @@ button, input, textarea { font: inherit; color: inherit; }
     linear-gradient(rgba(232, 234, 237, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(232, 234, 237, 0.03) 1px, transparent 1px);
   background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 20%, transparent 70%);
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 20%, transparent 70%);
 }
 
@@ -80,6 +81,7 @@ button, input, textarea { font: inherit; color: inherit; }
   z-index: 100;
   height: var(--header-h);
   background: rgba(10, 12, 15, 0.85);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   transition: box-shadow var(--transition);
@@ -755,6 +757,7 @@ button, input, textarea { font: inherit; color: inherit; }
     flex-direction: column;
     gap: 0;
     background: rgba(10, 12, 15, 0.97);
+    -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
     padding: 1rem 0 1.5rem;
