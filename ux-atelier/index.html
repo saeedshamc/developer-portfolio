@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UX Atelier — UI/UX Designer portfolio. Research-led product design, design systems, and interface craft.">
+  <meta name="theme-color" content="#fafafa">
+  <title>UX Atelier | UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true">
+    <div class="mesh mesh-a"></div>
+    <div class="mesh mesh-b"></div>
+    <div class="mesh mesh-c"></div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="brand">
+        <span class="brand-mark">UX</span>
+        <span class="brand-name">atelier<span class="brand-dot">.</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#craft">Design Craft</a></li>
+        <li><a href="#work">Selected Work</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-brand reveal">
+          <span class="hero-brand-mark">UX</span>
+          <span class="hero-brand-text">atelier<span>.</span></span>
+        </div>
+        <div class="hero-composition">
+          <div class="hero-photo reveal" data-delay="80">
+            <div class="photo-ring"></div>
+            <div class="photo-frame">
+              <img src="assets/avatar.jpg" alt="Your Name — UI/UX Designer" class="avatar-img" id="heroAvatar" data-fallback="UX">
+              <div class="avatar-fallback" id="heroAvatarFallback" hidden>UX</div>
+            </div>
+            <div class="photo-accent" aria-hidden="true"></div>
+          </div>
+          <div class="hero-copy reveal" data-delay="160">
+            <p class="hero-role">UI/UX Designer · Product Design</p>
+            <h1 class="hero-title">Experiences shaped by empathy &amp; intent.</h1>
+            <p class="hero-desc">I design research-backed interfaces — from discovery workshops to polished design systems that teams ship with confidence.</p>
+            <div class="hero-cta">
+              <a href="#work" class="btn btn-primary">View Selected Work</a>
+              <a href="#contact" class="btn btn-ghost">Start a Conversation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 — About</span>
+          <h2 class="section-title">Design that listens before it speaks.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I'm <strong>Your Name</strong>, a UI/UX designer with 7+ years translating user needs into clear, expressive product experiences. I work at the intersection of research, visual craft, and systems thinking.</p>
+            <p>Whether shaping a zero-to-one flow or evolving a mature design language, I partner with product &amp; engineering to deliver interfaces that feel effortless — and measurable in outcomes.</p>
+          </div>
+          <div class="about-aside reveal" data-delay="100">
+            <ul class="about-list">
+              <li><span class="about-label">Focus</span>Product UX &amp; design systems</li>
+              <li><span class="about-label">Tools</span>Figma · FigJam · Principle</li>
+              <li><span class="about-label">Based</span>Remote · Open to hybrid</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Craft -->
+    <section class="section section-alt" id="craft">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 — Design Craft</span>
+          <h2 class="section-title">Depth across the design stack.</h2>
+        </div>
+        <div class="craft-grid">
+          <article class="craft-card reveal">
+            <div class="craft-num">01</div>
+            <h3>User Research</h3>
+            <p>Contextual inquiry, journey mapping, and usability testing that surfaces real friction — not assumptions.</p>
+            <ul class="craft-tags">
+              <li>Interviews</li><li>Usability Tests</li><li>Personas</li><li>Heuristics</li>
+            </ul>
+          </article>
+          <article class="craft-card reveal" data-delay="80">
+            <div class="craft-num">02</div>
+            <h3>Interaction Design</h3>
+            <p>Flows, states, and micro-interactions that guide users with clarity — from wireframes to high-fidelity prototypes.</p>
+            <ul class="craft-tags">
+              <li>Wireframes</li><li>Prototyping</li><li>Motion</li><li>Accessibility</li>
+            </ul>
+          </article>
+          <article class="craft-card reveal" data-delay="160">
+            <div class="craft-num">03</div>
+            <h3>Visual Systems</h3>
+            <p>Typography, color, and component libraries that scale — expressive yet disciplined enough for engineering handoff.</p>
+            <ul class="craft-tags">
+              <li>Design Tokens</li><li>UI Kits</li><li>Brand UI</li><li>Documentation</li>
+            </ul>
+          </article>
+          <article class="craft-card reveal" data-delay="240">
+            <div class="craft-num">04</div>
+            <h3>Design Ops</h3>
+            <p>Workshops, critique rituals, and Figma workflows that keep cross-functional teams aligned and shipping.</p>
+            <ul class="craft-tags">
+              <li>Design Sprints</li><li>Dev Handoff</li><li>QA Loops</li><li>Metrics</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 — Selected Work</span>
+          <h2 class="section-title">Cases where clarity changed the product.</h2>
+        </div>
+        <div class="work-grid">
+          <article class="work-card reveal">
+            <div class="work-preview preview-a">
+              <div class="work-mock">
+                <span class="mock-nav"></span>
+                <span class="mock-panel"></span>
+                <span class="mock-row"></span>
+                <span class="mock-row short"></span>
+              </div>
+            </div>
+            <div class="work-body">
+              <span class="work-type">Product Redesign</span>
+              <h3>Verde Banking App</h3>
+              <p>End-to-end mobile redesign — onboarding drop-off reduced 34% through simplified KYC flows and progressive disclosure.</p>
+              <div class="work-meta">
+                <span>Mobile UX</span><span>Usability Testing</span><span>iOS &amp; Android</span>
+              </div>
+            </div>
+          </article>
+          <article class="work-card reveal" data-delay="100">
+            <div class="work-preview preview-b">
+              <div class="work-mock">
+                <span class="mock-sidebar"></span>
+                <span class="mock-chart"></span>
+                <span class="mock-cards"></span>
+              </div>
+            </div>
+            <div class="work-body">
+              <span class="work-type">Design System</span>
+              <h3>Canopy UI</h3>
+              <p>Token-driven component library for a B2B SaaS platform — 50+ components, dark mode, and WCAG 2.2 AA compliance.</p>
+              <div class="work-meta">
+                <span>Figma</span><span>Tokens</span><span>Documentation</span>
+              </div>
+            </div>
+          </article>
+          <article class="work-card reveal" data-delay="200">
+            <div class="work-preview preview-c">
+              <div class="work-mock">
+                <span class="mock-hero"></span>
+                <span class="mock-grid"></span>
+              </div>
+            </div>
+            <div class="work-body">
+              <span class="work-type">Brand Experience</span>
+              <h3>Lumen Health Portal</h3>
+              <p>Patient-facing web portal with empathetic tone, appointment scheduling, and accessible health record views.</p>
+              <div class="work-meta">
+                <span>Web UX</span><span>Content Strategy</span><span>a11y</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section section-alt" id="process">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 — Process</span>
+          <h2 class="section-title">From insight to shipped interface.</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-flow reveal">
+            <div class="process-step">
+              <span class="step-icon">01</span>
+              <div>
+                <h3>Discover</h3>
+                <p>Stakeholder interviews, competitive audits, and analytics review to frame the problem space with evidence.</p>
+              </div>
+            </div>
+            <div class="process-connector" aria-hidden="true"></div>
+            <div class="process-step">
+              <span class="step-icon">02</span>
+              <div>
+                <h3>Define &amp; Ideate</h3>
+                <p>Journey maps, IA, and rapid sketching — converging on flows that balance user goals with business constraints.</p>
+              </div>
+            </div>
+            <div class="process-connector" aria-hidden="true"></div>
+            <div class="process-step">
+              <span class="step-icon">03</span>
+              <div>
+                <h3>Design &amp; Validate</h3>
+                <p>High-fidelity UI, interactive prototypes, and moderated tests to refine before engineering investment.</p>
+              </div>
+            </div>
+            <div class="process-connector" aria-hidden="true"></div>
+            <div class="process-step">
+              <span class="step-icon">04</span>
+              <div>
+                <h3>Deliver &amp; Iterate</h3>
+                <p>Dev-ready specs, design QA, and post-launch metrics to close the loop and inform the next cycle.</p>
+              </div>
+            </div>
+          </div>
+          <aside class="process-aside reveal" data-delay="120">
+            <blockquote class="process-quote">
+              <p>"Your Name brings structure to ambiguity — research that actually changes the roadmap, not just the slide deck."</p>
+              <footer>— Head of Product, Verde</footer>
+            </blockquote>
+            <ul class="process-tools">
+              <li>Figma</li>
+              <li>FigJam</li>
+              <li>Maze</li>
+              <li>Notion</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">05 — Experience</span>
+          <h2 class="section-title">Roles shaped by user-centered craft.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2022 — Present</span>
+              <h3>Senior UI/UX Designer</h3>
+              <p class="timeline-company">Verde Financial</p>
+              <p>Led mobile product redesign across 2 squads. Established design system adoption and cut support tickets related to UX by 28%.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="80">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2019 — 2022</span>
+              <h3>Product Designer</h3>
+              <p class="timeline-company">Canopy Analytics</p>
+              <p>Owned dashboard UX for enterprise clients. Built the Canopy UI kit and ran quarterly usability research programs.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="160">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2017 — 2019</span>
+              <h3>UX Designer</h3>
+              <p class="timeline-company">Studio Lumen</p>
+              <p>Delivered health &amp; wellness digital experiences for agency clients — from discovery workshops to launch-ready handoffs.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="section-tag">06 — Contact</span>
+            <h2 class="section-title">Let's design something meaningful.</h2>
+            <p>Open to senior product design roles, design system engagements, and UX leadership on mission-driven teams.</p>
+            <ul class="contact-links">
+              <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble</a></li>
+              <li><a href="https://behance.net" target="_blank" rel="noopener noreferrer">Behance</a></li>
+            </ul>
+          </div>
+          <form class="contact-form reveal" data-delay="100" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required placeholder="Your name">
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com">
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Tell me about your project…"></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-success" id="formSuccess" hidden>Message sent — I'll get back to you soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="brand brand-sm">
+        <span class="brand-mark">UX</span>
+        <span class="brand-name">atelier<span class="brand-dot">.</span></span>
+      </a>
+      <p>&copy; <span id="year"></span> Your Name. Designed with intent.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
