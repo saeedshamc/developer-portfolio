@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sec Ops — SOC Analyst portfolio. Alert triage, detection tuning, and incident response for security operations teams.">
+  <title>Sec Ops | SOC Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dot-bg" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="4" y="6" width="24" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 24h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="16" cy="15" r="4" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M16 11V9M16 21v-2M12 15h-2M20 15h-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">Sec Ops</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">SOC Skills</a></li>
+        <li><a href="#incidents">Incidents</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <div class="hero-status" role="status">
+            <span class="status-dot"></span>
+            <span class="status-text">Monitoring active</span>
+          </div>
+          <p class="hero-label">SOC Analyst · Security Operations</p>
+          <h1 class="hero-title">Turning alerts into actionable intelligence.</h1>
+          <p class="hero-desc">I keep security operations centers running — triaging events, tuning detections, and coordinating response so teams stay ahead of noise, not buried in it.</p>
+          <div class="hero-cta">
+            <a href="#incidents" class="btn btn-primary">View Case Work</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" data-delay="150">
+          <div class="hero-frame">
+            <div class="avatar-wrap">
+              <img src="assets/avatar.jpg" alt="Your Name" class="avatar-img" id="heroAvatar" data-fallback="SO">
+              <div class="avatar-fallback" id="heroAvatarFallback" hidden>SO</div>
+            </div>
+            <div class="hero-meta">
+              <span class="meta-tag">Your Name</span>
+              <span class="meta-role">Senior SOC Analyst</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 — About</span>
+          <h2 class="section-title">Operations-first security, built for the floor.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <img src="assets/avatar.jpg" alt="Your Name" class="avatar-img" data-fallback="SO">
+            <div class="avatar-fallback about-fallback" hidden>SO</div>
+          </div>
+          <div class="about-text reveal" data-delay="100">
+            <p>I'm <strong>Your Name</strong>, a SOC analyst with 6+ years in tier-1 through tier-3 operations. I live in the queue — correlating signals, documenting findings, and escalating with context that helps responders move fast.</p>
+            <p>My focus is practical: reduce alert fatigue, improve detection fidelity, and build runbooks that analysts actually use during a 2 a.m. page. I bridge the gap between engineering and the operations floor.</p>
+            <ul class="about-stats">
+              <li><span class="stat-num">12k+</span><span class="stat-label">Alerts triaged</span></li>
+              <li><span class="stat-num">180+</span><span class="stat-label">Incidents handled</span></li>
+              <li><span class="stat-num">35%</span><span class="stat-label">False positive reduction</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOC Skills -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 — SOC Skills</span>
+          <h2 class="section-title">Core operational capabilities</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon">TRI</div>
+            <h3>Alert Triage &amp; Analysis</h3>
+            <p>Prioritizing SIEM alerts, enriching with threat intel, and separating true positives from operational noise.</p>
+            <ul class="skill-tags">
+              <li>Splunk</li><li>Sentinel</li><li>Elastic</li><li>MITRE ATT&amp;CK</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="80">
+            <div class="skill-icon">DET</div>
+            <h3>Detection Tuning</h3>
+            <p>Refining correlation rules, threshold logic, and use-case documentation to improve signal quality.</p>
+            <ul class="skill-tags">
+              <li>Sigma</li><li>KQL</li><li>SPL</li><li>Use Cases</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="160">
+            <div class="skill-icon">IR</div>
+            <h3>Incident Response</h3>
+            <p>Containment coordination, evidence preservation, timeline reconstruction, and post-incident reporting.</p>
+            <ul class="skill-tags">
+              <li>EDR</li><li>SOAR</li><li>Playbooks</li><li>NIST IR</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="240">
+            <div class="skill-icon">TI</div>
+            <h3>Threat Intelligence</h3>
+            <p>IOC validation, feed management, and mapping adversary behavior to internal detection coverage.</p>
+            <ul class="skill-tags">
+              <li>STIX/TAXII</li><li>MISP</li><li>VirusTotal</li><li>OSINT</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="320">
+            <div class="skill-icon">LOG</div>
+            <h3>Log Management</h3>
+            <p>Source onboarding, parser troubleshooting, and retention planning for compliance-ready visibility.</p>
+            <ul class="skill-tags">
+              <li>Syslog</li><li>WinEvent</li><li>CloudTrail</li><li>CEF</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal" data-delay="400">
+            <div class="skill-icon">DOC</div>
+            <h3>Runbooks &amp; Reporting</h3>
+            <p>Shift handoffs, executive summaries, and analyst-facing SOPs that survive turnover and audits.</p>
+            <ul class="skill-tags">
+              <li>SOPs</li><li>Shift Reports</li><li>Metrics</li><li>Tabletops</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Incidents / Case Work -->
+    <section class="section" id="incidents">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 — Incidents</span>
+          <h2 class="section-title">Selected case work</h2>
+        </div>
+        <div class="cases-list">
+          <article class="case-card reveal">
+            <div class="case-header">
+              <span class="case-id">INC-2025-0412</span>
+              <span class="case-severity severity-high">High</span>
+            </div>
+            <h3>Credential Stuffing Campaign — SaaS Platform</h3>
+            <p>Detected anomalous login velocity across 340 accounts via Sentinel analytics. Coordinated password resets, enforced MFA, and tuned detection to block repeat attempts within 45 minutes of initial alert.</p>
+            <ul class="case-tags">
+              <li>Identity</li><li>Sentinel</li><li>Containment</li>
+            </ul>
+          </article>
+          <article class="case-card reveal" data-delay="100">
+            <div class="case-header">
+              <span class="case-id">INC-2024-1187</span>
+              <span class="case-severity severity-medium">Medium</span>
+            </div>
+            <h3>Phishing Lateral Movement — Finance Sector</h3>
+            <p>Triaged suspicious PowerShell execution chain from a compromised mailbox. Escalated to IR, preserved EDR artifacts, and authored a detection rule that caught three similar attempts the following week.</p>
+            <ul class="case-tags">
+              <li>EDR</li><li>Phishing</li><li>Detection</li>
+            </ul>
+          </article>
+          <article class="case-card reveal" data-delay="200">
+            <div class="case-header">
+              <span class="case-id">INC-2024-0893</span>
+              <span class="case-severity severity-low">Low</span>
+            </div>
+            <h3>SIEM Use-Case Overhaul — Healthcare MSSP</h3>
+            <p>Audited 120+ correlation rules, retired 38 noisy detections, and rebuilt 22 high-fidelity use cases mapped to MITRE ATT&amp;CK — cutting daily alert volume by 41% without losing coverage.</p>
+            <ul class="case-tags">
+              <li>SIEM Tuning</li><li>MITRE</li><li>Metrics</li>
+            </ul>
+          </article>
+          <article class="case-card reveal" data-delay="300">
+            <div class="case-header">
+              <span class="case-id">INC-2023-0561</span>
+              <span class="case-severity severity-high">High</span>
+            </div>
+            <h3>Ransomware Precursor Activity — Manufacturing</h3>
+            <p>Identified Cobalt Strike beaconing during overnight shift. Initiated isolation playbook, notified on-call IR, and maintained comms log through containment — zero encryption observed.</p>
+            <ul class="case-tags">
+              <li>Network</li><li>SOAR</li><li>Playbook</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 — Experience</span>
+          <h2 class="section-title">Operations timeline</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2022">2022 — Present</time>
+              <h3>Senior SOC Analyst</h3>
+              <p class="timeline-org">WatchTower Security</p>
+              <p>Lead tier-3 triage, mentor junior analysts, and own detection tuning for a 24/7 SOC supporting 40+ enterprise clients.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="100">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2020">2020 — 2022</time>
+              <h3>SOC Analyst II</h3>
+              <p class="timeline-org">BlueLine MSSP</p>
+              <p>Handled escalated incidents, maintained SOAR playbooks, and contributed to quarterly threat-hunting sprints across Splunk deployments.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal" data-delay="200">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time datetime="2018">2018 — 2020</time>
+              <h3>Tier-1 SOC Analyst</h3>
+              <p class="timeline-org">NetGuard Operations</p>
+              <p>First-line alert triage, ticket documentation, and log source health monitoring for a hybrid on-prem and cloud environment.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">05 — Contact</span>
+          <h2 class="section-title">Let's strengthen your SOC.</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p>Available for SOC analyst roles, shift-lead positions, and security operations consulting. I respond within 48 hours.</p>
+            <ul class="contact-links">
+              <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+              <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+          </div>
+          <form class="contact-form reveal" data-delay="100" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+              <span class="form-error" data-for="name"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+              <span class="form-error" data-for="email"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+              <span class="form-error" data-for="subject"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <span class="form-error" data-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-success" id="formSuccess" hidden>Message sent successfully. I'll be in touch soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="brand brand-sm">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><rect x="4" y="6" width="24" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M8 24h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="16" cy="15" r="4" stroke="currentColor" stroke-width="1.5"/></svg>
+        </span>
+        <span class="brand-text">Sec Ops</span>
+      </a>
+      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
