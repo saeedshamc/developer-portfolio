@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resume Lite — A minimal one-page portfolio for any tech role. Skills, projects, and contact at a glance.">
+  <meta name="theme-color" content="#f5f7fa">
+  <title>Resume Lite | Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="brand">
+        <span class="brand-mark" aria-hidden="true">RL</span>
+        <span class="brand-name">Resume<span class="brand-accent">Lite</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-photo">
+          <img src="assets/avatar.jpg" alt="Your Name" class="avatar-img" id="heroAvatar" data-fallback="RL">
+          <div class="avatar-fallback" id="heroAvatarFallback" hidden>RL</div>
+        </div>
+        <div class="hero-copy">
+          <p class="hero-label">Software Engineer · Full Stack</p>
+          <h1 class="hero-name">Your Name</h1>
+          <p class="hero-bio">I build reliable software with clear architecture and thoughtful UX — from APIs to interfaces. Focused on shipping maintainable products that solve real problems.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-desc">Core tools &amp; technologies I work with daily.</p>
+        </header>
+        <ul class="skill-list">
+          <li class="skill-item">JavaScript / TypeScript</li>
+          <li class="skill-item">React &amp; Node.js</li>
+          <li class="skill-item">Python</li>
+          <li class="skill-item">SQL &amp; PostgreSQL</li>
+          <li class="skill-item">REST &amp; GraphQL APIs</li>
+          <li class="skill-item">Git &amp; CI/CD</li>
+          <li class="skill-item">Docker &amp; Cloud</li>
+          <li class="skill-item">Testing &amp; Debugging</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-desc">Selected work — concise highlights only.</p>
+        </header>
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="project-num" aria-hidden="true">01</span>
+            <h3 class="project-title">Platform Dashboard</h3>
+            <p class="project-desc">Real-time analytics dashboard with role-based access, charting, and export — built for ops teams monitoring live metrics.</p>
+            <ul class="project-tags">
+              <li>React</li>
+              <li>Node.js</li>
+              <li>PostgreSQL</li>
+            </ul>
+            <a href="#" class="project-link">View project &rarr;</a>
+          </article>
+          <article class="project-card">
+            <span class="project-num" aria-hidden="true">02</span>
+            <h3 class="project-title">API Gateway Service</h3>
+            <p class="project-desc">Centralized gateway handling auth, rate limiting, and request routing for microservices with structured logging.</p>
+            <ul class="project-tags">
+              <li>Go</li>
+              <li>Redis</li>
+              <li>Docker</li>
+            </ul>
+            <a href="#" class="project-link">View project &rarr;</a>
+          </article>
+          <article class="project-card">
+            <span class="project-num" aria-hidden="true">03</span>
+            <h3 class="project-title">Mobile Companion App</h3>
+            <p class="project-desc">Cross-platform app syncing offline data, push notifications, and secure token refresh for field teams.</p>
+            <ul class="project-tags">
+              <li>React Native</li>
+              <li>Firebase</li>
+              <li>REST</li>
+            </ul>
+            <a href="#" class="project-link">View project &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-desc">Open to roles, contracts &amp; collaborations.</p>
+        </header>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <ul class="contact-links">
+              <li><a href="mailto:you@example.com">you@example.com</a></li>
+              <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+              <span class="form-error" data-for="name"></span>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <span class="form-error" data-for="email"></span>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              <span class="form-error" data-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-success" id="formSuccess" hidden>Thanks — your message looks good. Connect the form to your backend to send.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-brand"><span class="brand-mark" aria-hidden="true">RL</span> Resume Lite</span>
+      <p class="footer-copy">&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
