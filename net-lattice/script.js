@@ -10,14 +10,22 @@
     var avatarFallback = document.getElementById('avatarFallback');
 
     if (avatarImg && avatarFallback) {
-        avatarImg.addEventListener('error', function () {
+        function showAvatarFallback() {
             avatarImg.style.display = 'none';
             avatarFallback.classList.add('is-visible');
-        });
+        }
 
-        if (!avatarImg.complete || avatarImg.naturalWidth === 0) {
+        avatarImg.addEventListener('error', showAvatarFallback);
+
+        if (avatarImg.complete && avatarImg.naturalWidth === 0) {
+            showAvatarFallback();
+        } else {
             avatarImg.addEventListener('load', function () {
-                avatarFallback.classList.remove('is-visible');
+                if (avatarImg.naturalWidth === 0) {
+                    showAvatarFallback();
+                } else {
+                    avatarFallback.classList.remove('is-visible');
+                }
             });
         }
     }
