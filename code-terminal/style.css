@@ -3531,3 +3531,7 @@ img {
     }
 
 }
+
+.avatar-fallback[hidden] {
+  display: none !important;
+}

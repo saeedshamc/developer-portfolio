@@ -773,3 +773,7 @@ button, input, textarea { font: inherit; color: inherit; }
     .reveal { opacity: 1; transform: none; transition: none; }
     *, *::before, *::after { transition-duration: 0.01ms !important; }
 }
+
+.avatar-fallback[hidden] {
+  display: none !important;
+}
